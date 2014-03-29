@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/6413/CalDAVTester/trunk/Resource/CalDAV/sharing/proxies/setupproxies
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repository/calendarserver/!svn/ver/5550/CalDAVTester/trunk/Resource/CalDAV/sharing/proxies/setupproxies/1.xml
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repository/calendarserver/!svn/ver/5550/CalDAVTester/trunk/Resource/CalDAV/sharing/proxies/setupproxies/2.xml
+END
+3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repository/calendarserver/!svn/ver/6413/CalDAVTester/trunk/Resource/CalDAV/sharing/proxies/setupproxies/3.xml
+END

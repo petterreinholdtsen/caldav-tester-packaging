@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/timezones
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/timezones/2.xml
+END
+4.ics
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/timezones/4.ics
+END
+5.ics
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/timezones/5.ics
+END
+1.ics
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/timezones/1.ics
+END
+3.ics
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/timezones/3.ics
+END

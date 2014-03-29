@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repository/calendarserver/!svn/ver/8946/CalDAVTester/trunk/Resource/CalDAV/sharing/multiple
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repository/calendarserver/!svn/ver/7294/CalDAVTester/trunk/Resource/CalDAV/sharing/multiple/1.xml
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repository/calendarserver/!svn/ver/8946/CalDAVTester/trunk/Resource/CalDAV/sharing/multiple/2.xml
+END
+3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repository/calendarserver/!svn/ver/8946/CalDAVTester/trunk/Resource/CalDAV/sharing/multiple/3.xml
+END
+4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repository/calendarserver/!svn/ver/7294/CalDAVTester/trunk/Resource/CalDAV/sharing/multiple/4.xml
+END

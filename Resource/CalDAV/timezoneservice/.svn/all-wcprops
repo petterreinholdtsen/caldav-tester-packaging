@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repository/calendarserver/!svn/ver/7207/CalDAVTester/trunk/Resource/CalDAV/timezoneservice
+END
+GB.ics
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repository/calendarserver/!svn/ver/7044/CalDAVTester/trunk/Resource/CalDAV/timezoneservice/GB.ics
+END
+London.ics
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repository/calendarserver/!svn/ver/7044/CalDAVTester/trunk/Resource/CalDAV/timezoneservice/London.ics
+END
+New_York.ics
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/7207/CalDAVTester/trunk/Resource/CalDAV/timezoneservice/New_York.ics
+END

@@ -1,0 +1,212 @@
+10
+
+dir
+13046
+http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/trunk/Resource/CalDAV/implicit
+http://svn.calendarserver.org/repository/calendarserver
+
+
+
+2014-03-12T21:14:36.211228Z
+12886
+cdaboo@apple.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e27351fd-9f3e-4f54-a53b-843176b1656c
+
+todo
+dir
+
+allday
+dir
+
+security
+dir
+
+cancels
+dir
+
+badclients
+dir
+
+partstatchange
+dir
+
+compatibility
+dir
+
+errors
+dir
+
+attendeedelete
+dir
+
+dropbox
+dir
+
+timezones
+dir
+
+defaultcalendar
+dir
+
+acls
+dir
+
+reschedule
+dir
+
+automultiple
+dir
+
+scheduletag
+dir
+
+auto1
+dir
+
+auto2
+dir
+
+auto3
+dir
+
+sharing
+dir
+
+publicproperties
+dir
+
+auto4
+dir
+
+auto5
+dir
+
+auto6
+dir
+
+auto7
+dir
+
+auto8
+dir
+
+calendartransp
+dir
+
+auto9
+dir
+
+sequence
+dir
+
+auto10
+dir
+
+auto11
+dir
+
+scheduleagent
+dir
+
+proxy
+dir
+
+freebusy
+dir
+
+scenario1
+dir
+
+autogroup
+dir
+
+scenario2
+dir
+
+schedulechanges
+dir
+
+partstattimestamp
+dir
+
+scenario3
+dir
+
+large
+dir
+
+deletecalendar
+dir
+
+imip
+dir
+
+privateevents
+dir
+
+1.xml
+file
+
+
+
+
+2014-03-29T20:16:15.000000Z
+e402c18bbd9c13b5c7e64cba82852684
+2009-04-21T15:33:09.832838Z
+4050
+cdaboo@apple.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+132
+
+automodes
+dir
+
+batchrefresh
+dir
+
+autopast
+dir
+
+copymove
+dir
+
+recur1
+dir
+
+recur2
+dir
+

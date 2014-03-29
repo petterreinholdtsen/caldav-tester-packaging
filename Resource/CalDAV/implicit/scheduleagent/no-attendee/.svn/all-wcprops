@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repository/calendarserver/!svn/ver/12833/CalDAVTester/trunk/Resource/CalDAV/implicit/scheduleagent/no-attendee
+END
+1.ics
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repository/calendarserver/!svn/ver/12833/CalDAVTester/trunk/Resource/CalDAV/implicit/scheduleagent/no-attendee/1.ics
+END
+2.ics
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repository/calendarserver/!svn/ver/12833/CalDAVTester/trunk/Resource/CalDAV/implicit/scheduleagent/no-attendee/2.ics
+END

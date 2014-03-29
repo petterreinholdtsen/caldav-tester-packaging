@@ -1,0 +1,85 @@
+10
+
+dir
+13046
+http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/trunk/Resource/CalDAV/sharing
+http://svn.calendarserver.org/repository/calendarserver
+
+
+
+2014-02-07T18:59:49.730779Z
+12604
+cdaboo@apple.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e27351fd-9f3e-4f54-a53b-843176b1656c
+
+quota
+dir
+
+proxies
+dir
+
+moves
+dir
+
+multiple
+dir
+
+feature
+dir
+
+peruser-data
+dir
+
+calendars
+dir
+
+webcal
+dir
+
+setup
+dir
+
+notification-sync
+dir
+
+replies
+dir
+
+cache
+dir
+
+unshare
+dir
+
+direct
+dir
+
+sync
+dir
+
+dropbox
+dir
+
+peruser-properties
+dir
+
+invites
+dir
+
+freebusy
+dir
+

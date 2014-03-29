@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/Resource/CardDAV/sharing/replies/decline
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/Resource/CardDAV/sharing/replies/decline/1.xml
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repository/calendarserver/!svn/ver/5602/CalDAVTester/trunk/Resource/CardDAV/sharing/replies/decline/2.xml
+END
+3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/11205/CalDAVTester/trunk/Resource/CardDAV/sharing/replies/decline/3.xml
+END
+4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/Resource/CardDAV/sharing/replies/decline/4.xml
+END

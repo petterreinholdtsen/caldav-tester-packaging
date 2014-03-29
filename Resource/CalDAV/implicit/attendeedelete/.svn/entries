@@ -1,0 +1,40 @@
+10
+
+dir
+13046
+http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/trunk/Resource/CalDAV/implicit/attendeedelete
+http://svn.calendarserver.org/repository/calendarserver
+
+
+
+2013-03-04T18:58:00.694099Z
+10835
+cdaboo@apple.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e27351fd-9f3e-4f54-a53b-843176b1656c
+
+recurring-delete-instance
+dir
+
+recurring-no-master
+dir
+
+non-recurring
+dir
+
+recurring-master
+dir
+

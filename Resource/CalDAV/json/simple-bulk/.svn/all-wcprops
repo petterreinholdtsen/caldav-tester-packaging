@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repository/calendarserver/!svn/ver/11637/CalDAVTester/trunk/Resource/CalDAV/json/simple-bulk
+END
+2.ics
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/11637/CalDAVTester/trunk/Resource/CalDAV/json/simple-bulk/2.ics
+END
+3.ics
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/11637/CalDAVTester/trunk/Resource/CalDAV/json/simple-bulk/3.ics
+END
+1.json
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/11637/CalDAVTester/trunk/Resource/CalDAV/json/simple-bulk/1.json
+END

@@ -1,0 +1,58 @@
+10
+
+dir
+13046
+http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/trunk/Resource/CalDAV/implicit/scenario1
+http://svn.calendarserver.org/repository/calendarserver
+
+
+
+2013-01-25T22:25:36.572327Z
+10329
+cdaboo@apple.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e27351fd-9f3e-4f54-a53b-843176b1656c
+
+alarms
+dir
+
+per-attendee-x-dash
+dir
+
+duplicate-attendee
+dir
+
+organizerdelete
+dir
+
+simple
+dir
+
+no-organizer
+dir
+
+tzid-reset
+dir
+
+no-x-properties
+dir
+
+attendeedelete
+dir
+
+recurring-alarms
+dir
+

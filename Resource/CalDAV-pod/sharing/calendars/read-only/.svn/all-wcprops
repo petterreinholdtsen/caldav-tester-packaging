@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/calendars/read-only
+END
+2.ics
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/calendars/read-only/2.ics
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/calendars/read-only/1.xml
+END
+3.ics
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/calendars/read-only/3.ics
+END
+4.ics
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/calendars/read-only/4.ics
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repository/calendarserver/!svn/ver/12705/CalDAVTester/trunk/src
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/src/__init__.py
+END
+test.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/calendarserver/!svn/ver/10742/CalDAVTester/trunk/src/test.py
+END
+httpshandler.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/src/httpshandler.py
+END
+xmlUtils.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repository/calendarserver/!svn/ver/11020/CalDAVTester/trunk/src/xmlUtils.py
+END
+serverinfo.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repository/calendarserver/!svn/ver/12675/CalDAVTester/trunk/src/serverinfo.py
+END
+xmlDefs.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repository/calendarserver/!svn/ver/12544/CalDAVTester/trunk/src/xmlDefs.py
+END
+request.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repository/calendarserver/!svn/ver/12705/CalDAVTester/trunk/src/request.py
+END
+testsuite.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/src/testsuite.py
+END
+caldavtest.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repository/calendarserver/!svn/ver/12674/CalDAVTester/trunk/src/caldavtest.py
+END
+jsonPointer.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/src/jsonPointer.py
+END
+manager.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repository/calendarserver/!svn/ver/12705/CalDAVTester/trunk/src/manager.py
+END

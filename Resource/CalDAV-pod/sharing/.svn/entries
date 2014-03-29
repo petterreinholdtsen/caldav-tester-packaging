@@ -1,0 +1,70 @@
+10
+
+dir
+13046
+http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/trunk/Resource/CalDAV-pod/sharing
+http://svn.calendarserver.org/repository/calendarserver
+
+
+
+2013-12-23T16:35:41.167424Z
+12188
+cdaboo@apple.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e27351fd-9f3e-4f54-a53b-843176b1656c
+
+notification-sync
+dir
+
+invites
+dir
+
+cache
+dir
+
+replies
+dir
+
+freebusy
+dir
+
+unshare
+dir
+
+common
+dir
+
+managedattachments
+dir
+
+proxies
+dir
+
+direct
+dir
+
+multiget
+dir
+
+calendars
+dir
+
+peruser-data
+dir
+
+sync
+dir
+

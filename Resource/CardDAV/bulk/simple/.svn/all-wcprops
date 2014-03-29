@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repository/calendarserver/!svn/ver/12543/CalDAVTester/trunk/Resource/CardDAV/bulk/simple
+END
+1.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/simple/1.vcf
+END
+10.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/simple/10.vcf
+END
+11.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/11569/CalDAVTester/trunk/Resource/CardDAV/bulk/simple/11.vcf
+END
+2.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/simple/2.vcf
+END
+3.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/simple/3.vcf
+END
+13.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/11569/CalDAVTester/trunk/Resource/CardDAV/bulk/simple/13.vcf
+END
+4.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/simple/4.vcf
+END
+12.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/12543/CalDAVTester/trunk/Resource/CardDAV/bulk/simple/12.xml
+END
+14.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/11569/CalDAVTester/trunk/Resource/CardDAV/bulk/simple/14.vcf
+END
+5.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/simple/5.vcf
+END
+6.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/simple/6.vcf
+END
+7.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/simple/7.vcf
+END
+8.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/simple/8.vcf
+END
+9.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/simple/9.vcf
+END

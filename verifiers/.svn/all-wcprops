@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repository/calendarserver/!svn/ver/12634/CalDAVTester/trunk/verifiers
+END
+jsonPointerMatch.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repository/calendarserver/!svn/ver/12545/CalDAVTester/trunk/verifiers/jsonPointerMatch.py
+END
+xmlElementMatch.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repository/calendarserver/!svn/ver/12634/CalDAVTester/trunk/verifiers/xmlElementMatch.py
+END
+header.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repository/calendarserver/!svn/ver/12542/CalDAVTester/trunk/verifiers/header.py
+END
+postFreeBusy.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repository/calendarserver/!svn/ver/12634/CalDAVTester/trunk/verifiers/postFreeBusy.py
+END
+addressDataMatch.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repository/calendarserver/!svn/ver/11915/CalDAVTester/trunk/verifiers/addressDataMatch.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/verifiers/__init__.py
+END
+multistatusItems.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repository/calendarserver/!svn/ver/12634/CalDAVTester/trunk/verifiers/multistatusItems.py
+END
+dataString.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/verifiers/dataString.py
+END
+propfindValues.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repository/calendarserver/!svn/ver/12634/CalDAVTester/trunk/verifiers/propfindValues.py
+END
+aclItems.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repository/calendarserver/!svn/ver/12634/CalDAVTester/trunk/verifiers/aclItems.py
+END
+prepostcondition.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repository/calendarserver/!svn/ver/12634/CalDAVTester/trunk/verifiers/prepostcondition.py
+END
+xmlDataMatch.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repository/calendarserver/!svn/ver/12634/CalDAVTester/trunk/verifiers/xmlDataMatch.py
+END
+statusCode.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/verifiers/statusCode.py
+END
+jcalDataMatch.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repository/calendarserver/!svn/ver/12538/CalDAVTester/trunk/verifiers/jcalDataMatch.py
+END
+calendarDataMatch.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repository/calendarserver/!svn/ver/12538/CalDAVTester/trunk/verifiers/calendarDataMatch.py
+END
+propfindItems.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repository/calendarserver/!svn/ver/12634/CalDAVTester/trunk/verifiers/propfindItems.py
+END
+freeBusy.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repository/calendarserver/!svn/ver/11915/CalDAVTester/trunk/verifiers/freeBusy.py
+END
+dataMatch.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repository/calendarserver/!svn/ver/12634/CalDAVTester/trunk/verifiers/dataMatch.py
+END

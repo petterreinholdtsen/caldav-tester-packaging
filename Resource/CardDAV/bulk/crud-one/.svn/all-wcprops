@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/crud-one
+END
+2.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/crud-one/2.vcf
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/crud-one/1.xml
+END
+3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/crud-one/3.xml
+END
+5.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/crud-one/5.vcf
+END
+4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/CardDAV/bulk/crud-one/4.xml
+END

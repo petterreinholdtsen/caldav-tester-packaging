@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/9865/CalDAVTester/trunk/Resource/CalDAV/sharing/calendars/read-write
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repository/calendarserver/!svn/ver/5597/CalDAVTester/trunk/Resource/CalDAV/sharing/calendars/read-write/1.xml
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repository/calendarserver/!svn/ver/9865/CalDAVTester/trunk/Resource/CalDAV/sharing/calendars/read-write/2.xml
+END
+3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repository/calendarserver/!svn/ver/8946/CalDAVTester/trunk/Resource/CalDAV/sharing/calendars/read-write/3.xml
+END
+5.ics
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/sharing/calendars/read-write/5.ics
+END
+4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repository/calendarserver/!svn/ver/5996/CalDAVTester/trunk/Resource/CalDAV/sharing/calendars/read-write/4.xml
+END
+6.ics
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/sharing/calendars/read-write/6.ics
+END
+5.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repository/calendarserver/!svn/ver/9398/CalDAVTester/trunk/Resource/CalDAV/sharing/calendars/read-write/5.xml
+END
+7.ics
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/sharing/calendars/read-write/7.ics
+END
+8.ics
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/sharing/calendars/read-write/8.ics
+END
+9.ics
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/sharing/calendars/read-write/9.ics
+END

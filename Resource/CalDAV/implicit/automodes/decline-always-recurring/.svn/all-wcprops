@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repository/calendarserver/!svn/ver/10196/CalDAVTester/trunk/Resource/CalDAV/implicit/automodes/decline-always-recurring
+END
+1.ics
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repository/calendarserver/!svn/ver/10196/CalDAVTester/trunk/Resource/CalDAV/implicit/automodes/decline-always-recurring/1.ics
+END
+2.ics
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repository/calendarserver/!svn/ver/10196/CalDAVTester/trunk/Resource/CalDAV/implicit/automodes/decline-always-recurring/2.ics
+END
+3.ics
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repository/calendarserver/!svn/ver/10196/CalDAVTester/trunk/Resource/CalDAV/implicit/automodes/decline-always-recurring/3.ics
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repository/calendarserver/!svn/ver/10303/CalDAVTester/trunk/Resource/CalDAV/managedattachments/dropbox
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repository/calendarserver/!svn/ver/10303/CalDAVTester/trunk/Resource/CalDAV/managedattachments/dropbox/1.xml
+END
+3.ics
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repository/calendarserver/!svn/ver/10303/CalDAVTester/trunk/Resource/CalDAV/managedattachments/dropbox/3.ics
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repository/calendarserver/!svn/ver/10303/CalDAVTester/trunk/Resource/CalDAV/managedattachments/dropbox/2.xml
+END
+4.txt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repository/calendarserver/!svn/ver/10303/CalDAVTester/trunk/Resource/CalDAV/managedattachments/dropbox/4.txt
+END

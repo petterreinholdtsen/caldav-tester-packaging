@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repository/calendarserver/!svn/ver/9865/CalDAVTester/trunk/Resource/CalDAV/sharing/invites/new
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/5597/CalDAVTester/trunk/Resource/CalDAV/sharing/invites/new/1.xml
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/9865/CalDAVTester/trunk/Resource/CalDAV/sharing/invites/new/2.xml
+END
+3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/5497/CalDAVTester/trunk/Resource/CalDAV/sharing/invites/new/3.xml
+END

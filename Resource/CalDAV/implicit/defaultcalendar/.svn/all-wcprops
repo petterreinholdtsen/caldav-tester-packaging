@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/11147/CalDAVTester/trunk/Resource/CalDAV/implicit/defaultcalendar
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repository/calendarserver/!svn/ver/4923/CalDAVTester/trunk/Resource/CalDAV/implicit/defaultcalendar/1.xml
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repository/calendarserver/!svn/ver/8354/CalDAVTester/trunk/Resource/CalDAV/implicit/defaultcalendar/2.xml
+END
+3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repository/calendarserver/!svn/ver/8354/CalDAVTester/trunk/Resource/CalDAV/implicit/defaultcalendar/3.xml
+END
+4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repository/calendarserver/!svn/ver/4923/CalDAVTester/trunk/Resource/CalDAV/implicit/defaultcalendar/4.xml
+END
+6.ics
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/11147/CalDAVTester/trunk/Resource/CalDAV/implicit/defaultcalendar/6.ics
+END
+5.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repository/calendarserver/!svn/ver/4923/CalDAVTester/trunk/Resource/CalDAV/implicit/defaultcalendar/5.xml
+END
+7.ics
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/11147/CalDAVTester/trunk/Resource/CalDAV/implicit/defaultcalendar/7.ics
+END
+8.ics
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/11147/CalDAVTester/trunk/Resource/CalDAV/implicit/defaultcalendar/8.ics
+END

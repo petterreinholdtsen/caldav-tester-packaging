@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/10641/CalDAVTester/trunk/Resource/CalDAV/default-alarms/sharing
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/8362/CalDAVTester/trunk/Resource/CalDAV/default-alarms/sharing/1.xml
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/8362/CalDAVTester/trunk/Resource/CalDAV/default-alarms/sharing/2.xml
+END
+3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/8946/CalDAVTester/trunk/Resource/CalDAV/default-alarms/sharing/3.xml
+END
+4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/8362/CalDAVTester/trunk/Resource/CalDAV/default-alarms/sharing/4.xml
+END
+6.ics
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/default-alarms/sharing/6.ics
+END
+5.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/8425/CalDAVTester/trunk/Resource/CalDAV/default-alarms/sharing/5.xml
+END
+7.ics
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/default-alarms/sharing/7.ics
+END
+8.ics
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repository/calendarserver/!svn/ver/10641/CalDAVTester/trunk/Resource/CalDAV/default-alarms/sharing/8.ics
+END
+9.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/8425/CalDAVTester/trunk/Resource/CalDAV/default-alarms/sharing/9.xml
+END

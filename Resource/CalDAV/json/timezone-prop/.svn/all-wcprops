@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repository/calendarserver/!svn/ver/12697/CalDAVTester/trunk/Resource/CalDAV/json/timezone-prop
+END
+3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/11637/CalDAVTester/trunk/Resource/CalDAV/json/timezone-prop/3.xml
+END
+4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/12697/CalDAVTester/trunk/Resource/CalDAV/json/timezone-prop/4.xml
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/11637/CalDAVTester/trunk/Resource/CalDAV/json/timezone-prop/1.xml
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/11637/CalDAVTester/trunk/Resource/CalDAV/json/timezone-prop/2.xml
+END

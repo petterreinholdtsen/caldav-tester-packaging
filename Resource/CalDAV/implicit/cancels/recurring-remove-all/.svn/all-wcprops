@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/implicit/cancels/recurring-remove-all
+END
+1.ics
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/implicit/cancels/recurring-remove-all/1.ics
+END
+2.ics
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/implicit/cancels/recurring-remove-all/2.ics
+END
+3.ics
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/implicit/cancels/recurring-remove-all/3.ics
+END

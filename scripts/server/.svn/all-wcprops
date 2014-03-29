@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repository/calendarserver/!svn/ver/12544/CalDAVTester/trunk/scripts/server
+END
+serverinfo-template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12544/CalDAVTester/trunk/scripts/server/serverinfo-template.xml
+END
+serverinfo.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repository/calendarserver/!svn/ver/12544/CalDAVTester/trunk/scripts/server/serverinfo.dtd
+END
+serverinfo-pod.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/12544/CalDAVTester/trunk/scripts/server/serverinfo-pod.xml
+END
+serverinfo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repository/calendarserver/!svn/ver/12544/CalDAVTester/trunk/scripts/server/serverinfo.xml
+END

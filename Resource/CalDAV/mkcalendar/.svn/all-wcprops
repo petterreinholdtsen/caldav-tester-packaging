@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repository/calendarserver/!svn/ver/9382/CalDAVTester/trunk/Resource/CalDAV/mkcalendar
+END
+3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repository/calendarserver/!svn/ver/9382/CalDAVTester/trunk/Resource/CalDAV/mkcalendar/3.xml
+END
+1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repository/calendarserver/!svn/ver/4923/CalDAVTester/trunk/Resource/CalDAV/mkcalendar/1.txt
+END
+2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repository/calendarserver/!svn/ver/4923/CalDAVTester/trunk/Resource/CalDAV/mkcalendar/2.txt
+END

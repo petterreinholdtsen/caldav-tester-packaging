@@ -1,0 +1,881 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repository/calendarserver/!svn/ver/12886/CalDAVTester/trunk/scripts/tests/CalDAV
+END
+implicitautomodes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repository/calendarserver/!svn/ver/12704/CalDAVTester/trunk/scripts/tests/CalDAV/implicitautomodes.xml
+END
+sharing-replies.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-replies.xml
+END
+implicitrecur2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitrecur2.xml
+END
+implicittodo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repository/calendarserver/!svn/ver/12550/CalDAVTester/trunk/scripts/tests/CalDAV/implicittodo.xml
+END
+limits.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/limits.xml
+END
+implicitallday.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/12704/CalDAVTester/trunk/scripts/tests/CalDAV/implicitallday.xml
+END
+delete.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/delete.xml
+END
+depthreportsacl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/depthreportsacl.xml
+END
+implicitcancels.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/12540/CalDAVTester/trunk/scripts/tests/CalDAV/implicitcancels.xml
+END
+encodedURIs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repository/calendarserver/!svn/ver/10875/CalDAVTester/trunk/scripts/tests/CalDAV/encodedURIs.xml
+END
+put.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/put.xml
+END
+implicitdropbox.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitdropbox.xml
+END
+availability.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/availability.xml
+END
+current-user-principal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/calendarserver/!svn/ver/11752/CalDAVTester/trunk/scripts/tests/CalDAV/current-user-principal.xml
+END
+managed-attachments-dropbox.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repository/calendarserver/!svn/ver/11459/CalDAVTester/trunk/scripts/tests/CalDAV/managed-attachments-dropbox.xml
+END
+sharing-quota.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/11229/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-quota.xml
+END
+implicitscheduletag.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repository/calendarserver/!svn/ver/12540/CalDAVTester/trunk/scripts/tests/CalDAV/implicitscheduletag.xml
+END
+sharing-feature.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-feature.xml
+END
+sync-report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repository/calendarserver/!svn/ver/12614/CalDAVTester/trunk/scripts/tests/CalDAV/sync-report.xml
+END
+sharing-webcal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/11229/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-webcal.xml
+END
+implicitoptions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/implicitoptions.xml
+END
+sharing-create.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-create.xml
+END
+partitioning-simple.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/partitioning-simple.xml
+END
+managed-attachments-recurrence.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repository/calendarserver/!svn/ver/11459/CalDAVTester/trunk/scripts/tests/CalDAV/managed-attachments-recurrence.xml
+END
+proppatch.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/proppatch.xml
+END
+schedulepost.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/schedulepost.xml
+END
+caldavIOP.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/caldavIOP.xml
+END
+implicitsequence.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitsequence.xml
+END
+sharing-dropbox.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/11229/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-dropbox.xml
+END
+vtodos.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repository/calendarserver/!svn/ver/11770/CalDAVTester/trunk/scripts/tests/CalDAV/vtodos.xml
+END
+get.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repository/calendarserver/!svn/ver/11627/CalDAVTester/trunk/scripts/tests/CalDAV/get.xml
+END
+implicitscenario2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repository/calendarserver/!svn/ver/12540/CalDAVTester/trunk/scripts/tests/CalDAV/implicitscenario2.xml
+END
+implicitpartstattimestamp.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitpartstattimestamp.xml
+END
+alarm-dismissal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/alarm-dismissal.xml
+END
+expandproperty.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/expandproperty.xml
+END
+implicitprivateevents.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitprivateevents.xml
+END
+implicitautopast.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repository/calendarserver/!svn/ver/12704/CalDAVTester/trunk/scripts/tests/CalDAV/implicitautopast.xml
+END
+implicitcopymove.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repository/calendarserver/!svn/ver/11807/CalDAVTester/trunk/scripts/tests/CalDAV/implicitcopymove.xml
+END
+bad-json.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/11747/CalDAVTester/trunk/scripts/tests/CalDAV/bad-json.xml
+END
+mkcalendar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/scripts/tests/CalDAV/mkcalendar.xml
+END
+implicitpartstatchange.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitpartstatchange.xml
+END
+conditional.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/conditional.xml
+END
+floating.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/10641/CalDAVTester/trunk/scripts/tests/CalDAV/floating.xml
+END
+resourceid.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/resourceid.xml
+END
+implicitacls.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/implicitacls.xml
+END
+implicitreschedule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitreschedule.xml
+END
+scheduleprops.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/11138/CalDAVTester/trunk/scripts/tests/CalDAV/scheduleprops.xml
+END
+schedulepostmaskuid.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/schedulepostmaskuid.xml
+END
+schedulepostacl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/schedulepostacl.xml
+END
+prefer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repository/calendarserver/!svn/ver/11771/CalDAVTester/trunk/scripts/tests/CalDAV/prefer.xml
+END
+implicitauto2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitauto2.xml
+END
+implicitsharing.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitsharing.xml
+END
+implicitauto4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitauto4.xml
+END
+polls.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repository/calendarserver/!svn/ver/11915/CalDAVTester/trunk/scripts/tests/CalDAV/polls.xml
+END
+implicitauto6.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitauto6.xml
+END
+implicitauto8.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitauto8.xml
+END
+proxyauthz.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/proxyauthz.xml
+END
+reports.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repository/calendarserver/!svn/ver/10743/CalDAVTester/trunk/scripts/tests/CalDAV/reports.xml
+END
+managed-attachments-sharing.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repository/calendarserver/!svn/ver/11459/CalDAVTester/trunk/scripts/tests/CalDAV/managed-attachments-sharing.xml
+END
+duplicate_uids.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/10641/CalDAVTester/trunk/scripts/tests/CalDAV/duplicate_uids.xml
+END
+acl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/scripts/tests/CalDAV/acl.xml
+END
+nonascii.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/12540/CalDAVTester/trunk/scripts/tests/CalDAV/nonascii.xml
+END
+implicitauto10.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/12704/CalDAVTester/trunk/scripts/tests/CalDAV/implicitauto10.xml
+END
+json.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repository/calendarserver/!svn/ver/12696/CalDAVTester/trunk/scripts/tests/CalDAV/json.xml
+END
+attachments.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/attachments.xml
+END
+implicitproxy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12540/CalDAVTester/trunk/scripts/tests/CalDAV/implicitproxy.xml
+END
+timezones.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/timezones.xml
+END
+aclreports.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/12540/CalDAVTester/trunk/scripts/tests/CalDAV/aclreports.xml
+END
+implicitautogroup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repository/calendarserver/!svn/ver/12704/CalDAVTester/trunk/scripts/tests/CalDAV/implicitautogroup.xml
+END
+implicitschedulechanges.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repository/calendarserver/!svn/ver/12550/CalDAVTester/trunk/scripts/tests/CalDAV/implicitschedulechanges.xml
+END
+depthreports.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/depthreports.xml
+END
+ical-client.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/ical-client.xml
+END
+implicitimip.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/implicitimip.xml
+END
+implicitbatchrefresh.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitbatchrefresh.xml
+END
+managed-attachments-quota.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repository/calendarserver/!svn/ver/11459/CalDAVTester/trunk/scripts/tests/CalDAV/managed-attachments-quota.xml
+END
+bad-ical.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/11747/CalDAVTester/trunk/scripts/tests/CalDAV/bad-ical.xml
+END
+implicitrecur1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitrecur1.xml
+END
+bulk.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repository/calendarserver/!svn/ver/11138/CalDAVTester/trunk/scripts/tests/CalDAV/bulk.xml
+END
+sharing-unshare.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-unshare.xml
+END
+copymove.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/scripts/tests/CalDAV/copymove.xml
+END
+sharing-direct.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-direct.xml
+END
+implicitattendeedelete.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/calendarserver/!svn/ver/12704/CalDAVTester/trunk/scripts/tests/CalDAV/implicitattendeedelete.xml
+END
+implicittimezones.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicittimezones.xml
+END
+implicitdefaultcalendar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repository/calendarserver/!svn/ver/12704/CalDAVTester/trunk/scripts/tests/CalDAV/implicitdefaultcalendar.xml
+END
+sharing-invites.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/12540/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-invites.xml
+END
+servertoserveroutgoing.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/servertoserveroutgoing.xml
+END
+sharing-freebusy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repository/calendarserver/!svn/ver/11229/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-freebusy.xml
+END
+privatecomments.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/12550/CalDAVTester/trunk/scripts/tests/CalDAV/privatecomments.xml
+END
+extended-freebusy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/extended-freebusy.xml
+END
+servertoserverincoming.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/servertoserverincoming.xml
+END
+sharing-peruser-data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repository/calendarserver/!svn/ver/11229/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-peruser-data.xml
+END
+partitioning-scheduleimplicitauto.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repository/calendarserver/!svn/ver/12540/CalDAVTester/trunk/scripts/tests/CalDAV/partitioning-scheduleimplicitauto.xml
+END
+implicitpublicproperties.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitpublicproperties.xml
+END
+recurrenceput.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/10315/CalDAVTester/trunk/scripts/tests/CalDAV/recurrenceput.xml
+END
+implicitcalendartransp.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/calendarserver/!svn/ver/11138/CalDAVTester/trunk/scripts/tests/CalDAV/implicitcalendartransp.xml
+END
+add-member.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/add-member.xml
+END
+privateevents.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/10641/CalDAVTester/trunk/scripts/tests/CalDAV/privateevents.xml
+END
+errors-big-calendars.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/errors-big-calendars.xml
+END
+sharing-peruser-properties.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-peruser-properties.xml
+END
+schedulenomore.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/schedulenomore.xml
+END
+dropbox.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/dropbox.xml
+END
+ctag.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/ctag.xml
+END
+implicitfreebusy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitfreebusy.xml
+END
+implicitscenario1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitscenario1.xml
+END
+implicitscenario3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repository/calendarserver/!svn/ver/12540/CalDAVTester/trunk/scripts/tests/CalDAV/implicitscenario3.xml
+END
+sharing-proxies.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/12540/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-proxies.xml
+END
+sharing-moves.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/11229/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-moves.xml
+END
+brief.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repository/calendarserver/!svn/ver/10649/CalDAVTester/trunk/scripts/tests/CalDAV/brief.xml
+END
+sharing-notification-sync.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repository/calendarserver/!svn/ver/12143/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-notification-sync.xml
+END
+partitioning-scheduleimplicit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repository/calendarserver/!svn/ver/12540/CalDAVTester/trunk/scripts/tests/CalDAV/partitioning-scheduleimplicit.xml
+END
+webcal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/webcal.xml
+END
+well-known.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/well-known.xml
+END
+implicitsecurity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitsecurity.xml
+END
+implicitbadclients.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/12704/CalDAVTester/trunk/scripts/tests/CalDAV/implicitbadclients.xml
+END
+implicitcompatibility.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitcompatibility.xml
+END
+sharing-sync.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repository/calendarserver/!svn/ver/12143/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-sync.xml
+END
+impliciterrors.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/impliciterrors.xml
+END
+errors.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repository/calendarserver/!svn/ver/12725/CalDAVTester/trunk/scripts/tests/CalDAV/errors.xml
+END
+managed-attachments-implicit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/12704/CalDAVTester/trunk/scripts/tests/CalDAV/managed-attachments-implicit.xml
+END
+implicitautomultiple.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repository/calendarserver/!svn/ver/12704/CalDAVTester/trunk/scripts/tests/CalDAV/implicitautomultiple.xml
+END
+partitioning-calendaruserproxy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/partitioning-calendaruserproxy.xml
+END
+propfind.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/propfind.xml
+END
+implicitauto1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12540/CalDAVTester/trunk/scripts/tests/CalDAV/implicitauto1.xml
+END
+sharing-multiple.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repository/calendarserver/!svn/ver/12540/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-multiple.xml
+END
+implicitauto3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitauto3.xml
+END
+scheduleimplicit-compatability.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/scheduleimplicit-compatability.xml
+END
+implicitauto5.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitauto5.xml
+END
+quota.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/quota.xml
+END
+implicitauto7.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12704/CalDAVTester/trunk/scripts/tests/CalDAV/implicitauto7.xml
+END
+sharing-cache.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/11619/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-cache.xml
+END
+implicitauto9.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitauto9.xml
+END
+default-alarms.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/12698/CalDAVTester/trunk/scripts/tests/CalDAV/default-alarms.xml
+END
+directory.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/directory.xml
+END
+managed-attachments.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repository/calendarserver/!svn/ver/11752/CalDAVTester/trunk/scripts/tests/CalDAV/managed-attachments.xml
+END
+caldavtest.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/11894/CalDAVTester/trunk/scripts/tests/CalDAV/caldavtest.dtd
+END
+implicitauto11.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/12704/CalDAVTester/trunk/scripts/tests/CalDAV/implicitauto11.xml
+END
+implicitscheduleagent.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/12886/CalDAVTester/trunk/scripts/tests/CalDAV/implicitscheduleagent.xml
+END
+recurrence-splitting.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repository/calendarserver/!svn/ver/12280/CalDAVTester/trunk/scripts/tests/CalDAV/recurrence-splitting.xml
+END
+rscale.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repository/calendarserver/!svn/ver/11325/CalDAVTester/trunk/scripts/tests/CalDAV/rscale.xml
+END
+calendaruserproxy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repository/calendarserver/!svn/ver/12050/CalDAVTester/trunk/scripts/tests/CalDAV/calendaruserproxy.xml
+END
+timezoneservice.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/12540/CalDAVTester/trunk/scripts/tests/CalDAV/timezoneservice.xml
+END
+freebusy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/scripts/tests/CalDAV/freebusy.xml
+END
+sharing-calendars.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/scripts/tests/CalDAV/sharing-calendars.xml
+END
+implicitlarge.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12537/CalDAVTester/trunk/scripts/tests/CalDAV/implicitlarge.xml
+END
+timezonestdservice.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/12555/CalDAVTester/trunk/scripts/tests/CalDAV/timezonestdservice.xml
+END
+implicitdeletecalendar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/calendarserver/!svn/ver/11807/CalDAVTester/trunk/scripts/tests/CalDAV/implicitdeletecalendar.xml
+END

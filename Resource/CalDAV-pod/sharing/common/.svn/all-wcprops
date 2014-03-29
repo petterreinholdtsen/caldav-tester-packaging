@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/common
+END
+sharedas.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/common/sharedas.xml
+END
+notificationdecline2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/common/notificationdecline2.xml
+END
+invited2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/common/invited2.xml
+END
+notificationreply2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/common/notificationreply2.xml
+END
+notificationinvite2-ro.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/common/notificationinvite2-ro.xml
+END
+notificationinvite2-2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/common/notificationinvite2-2.xml
+END
+notificationinvite2-3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/common/notificationinvite2-3.xml
+END
+notificationinvite2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/common/notificationinvite2.xml
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repository/calendarserver/!svn/ver/12674/CalDAVTester/trunk/src/observers
+END
+trace.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repository/calendarserver/!svn/ver/12634/CalDAVTester/trunk/src/observers/trace.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repository/calendarserver/!svn/ver/12634/CalDAVTester/trunk/src/observers/__init__.py
+END
+jsondump.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repository/calendarserver/!svn/ver/12634/CalDAVTester/trunk/src/observers/jsondump.py
+END
+log.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repository/calendarserver/!svn/ver/12674/CalDAVTester/trunk/src/observers/log.py
+END
+loadfiles.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repository/calendarserver/!svn/ver/12649/CalDAVTester/trunk/src/observers/loadfiles.py
+END
+base.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repository/calendarserver/!svn/ver/12634/CalDAVTester/trunk/src/observers/base.py
+END

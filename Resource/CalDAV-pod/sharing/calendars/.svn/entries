@@ -1,0 +1,37 @@
+10
+
+dir
+13046
+http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/calendars
+http://svn.calendarserver.org/repository/calendarserver
+
+
+
+2013-12-17T19:23:03.210395Z
+12120
+cdaboo@apple.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e27351fd-9f3e-4f54-a53b-843176b1656c
+
+defaultcalendar
+dir
+
+read-write
+dir
+
+read-only
+dir
+

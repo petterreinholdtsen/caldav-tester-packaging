@@ -1,0 +1,85 @@
+10
+
+dir
+13046
+http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/trunk/Resource/CalDAV/implicit/automodes
+http://svn.calendarserver.org/repository/calendarserver
+
+
+
+2013-01-03T19:46:04.935528Z
+10196
+cdaboo@apple.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e27351fd-9f3e-4f54-a53b-843176b1656c
+
+accept-always-free
+dir
+
+decline-if-busy-recurring
+dir
+
+accept-always-busy
+dir
+
+none-free
+dir
+
+none-busy
+dir
+
+decline-always-free
+dir
+
+decline-always-busy
+dir
+
+automatic-recurring
+dir
+
+accept-if-free-free
+dir
+
+accept-if-free-busy
+dir
+
+accept-always-recurring
+dir
+
+none-recurring
+dir
+
+decline-if-busy-free
+dir
+
+decline-if-busy-busy
+dir
+
+decline-always-recurring
+dir
+
+automatic-free
+dir
+
+automatic-busy
+dir
+
+accept-if-free-recurring
+dir
+
+data
+dir
+

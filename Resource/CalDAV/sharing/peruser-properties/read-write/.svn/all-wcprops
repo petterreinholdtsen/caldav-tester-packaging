@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repository/calendarserver/!svn/ver/9865/CalDAVTester/trunk/Resource/CalDAV/sharing/peruser-properties/read-write
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repository/calendarserver/!svn/ver/5597/CalDAVTester/trunk/Resource/CalDAV/sharing/peruser-properties/read-write/1.xml
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repository/calendarserver/!svn/ver/9865/CalDAVTester/trunk/Resource/CalDAV/sharing/peruser-properties/read-write/2.xml
+END
+3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repository/calendarserver/!svn/ver/8946/CalDAVTester/trunk/Resource/CalDAV/sharing/peruser-properties/read-write/3.xml
+END
+4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repository/calendarserver/!svn/ver/5441/CalDAVTester/trunk/Resource/CalDAV/sharing/peruser-properties/read-write/4.xml
+END

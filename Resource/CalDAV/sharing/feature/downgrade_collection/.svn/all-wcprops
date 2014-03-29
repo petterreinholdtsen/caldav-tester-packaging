@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repository/calendarserver/!svn/ver/5441/CalDAVTester/trunk/Resource/CalDAV/sharing/feature/downgrade_collection
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repository/calendarserver/!svn/ver/5441/CalDAVTester/trunk/Resource/CalDAV/sharing/feature/downgrade_collection/1.xml
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repository/calendarserver/!svn/ver/5441/CalDAVTester/trunk/Resource/CalDAV/sharing/feature/downgrade_collection/2.xml
+END

@@ -1,0 +1,40 @@
+10
+
+dir
+13046
+http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/trunk/Resource
+http://svn.calendarserver.org/repository/calendarserver
+
+
+
+2014-03-12T21:14:36.211228Z
+12886
+cdaboo@apple.com
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+e27351fd-9f3e-4f54-a53b-843176b1656c
+
+CardDAV
+dir
+
+Common
+dir
+
+CalDAV
+dir
+
+CalDAV-pod
+dir
+

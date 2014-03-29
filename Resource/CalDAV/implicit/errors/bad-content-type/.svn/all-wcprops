@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/implicit/errors/bad-content-type
+END
+1.ics
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/implicit/errors/bad-content-type/1.ics
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/4923/CalDAVTester/trunk/Resource/CalDAV/implicit/errors/bad-content-type/2.xml
+END

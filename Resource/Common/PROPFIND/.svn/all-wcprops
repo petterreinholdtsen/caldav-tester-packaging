@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/Common/PROPFIND
+END
+max-collections.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/6799/CalDAVTester/trunk/Resource/Common/PROPFIND/max-collections.xml
+END
+props.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/Common/PROPFIND/props.xml
+END
+resourceid.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/5572/CalDAVTester/trunk/Resource/Common/PROPFIND/resourceid.xml
+END
+propnames.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repository/calendarserver/!svn/ver/8362/CalDAVTester/trunk/Resource/Common/PROPFIND/propnames.xml
+END
+displayname.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/calendarserver/!svn/ver/5490/CalDAVTester/trunk/Resource/Common/PROPFIND/displayname.xml
+END
+current-user-privilege-set.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repository/calendarserver/!svn/ver/10146/CalDAVTester/trunk/Resource/Common/PROPFIND/current-user-privilege-set.xml
+END
+getctag.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/7203/CalDAVTester/trunk/Resource/Common/PROPFIND/getctag.xml
+END
+getetag.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/5843/CalDAVTester/trunk/Resource/Common/PROPFIND/getetag.xml
+END
+supported-report-set.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repository/calendarserver/!svn/ver/6415/CalDAVTester/trunk/Resource/Common/PROPFIND/supported-report-set.xml
+END
+notificationtype.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/Common/PROPFIND/notificationtype.xml
+END
+count.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/5441/CalDAVTester/trunk/Resource/Common/PROPFIND/count.xml
+END
+resourcetype.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repository/calendarserver/!svn/ver/5441/CalDAVTester/trunk/Resource/Common/PROPFIND/resourcetype.xml
+END
+quota.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repository/calendarserver/!svn/ver/5727/CalDAVTester/trunk/Resource/Common/PROPFIND/quota.xml
+END
+sync-token.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/7272/CalDAVTester/trunk/Resource/Common/PROPFIND/sync-token.xml
+END
+max-resources.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repository/calendarserver/!svn/ver/6799/CalDAVTester/trunk/Resource/Common/PROPFIND/max-resources.xml
+END
+invite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/Common/PROPFIND/invite.xml
+END

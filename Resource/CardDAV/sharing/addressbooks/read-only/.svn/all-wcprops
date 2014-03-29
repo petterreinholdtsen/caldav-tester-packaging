@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/Resource/CardDAV/sharing/addressbooks/read-only
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/Resource/CardDAV/sharing/addressbooks/read-only/1.xml
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/Resource/CardDAV/sharing/addressbooks/read-only/2.xml
+END
+3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/Resource/CardDAV/sharing/addressbooks/read-only/3.xml
+END
+5.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repository/calendarserver/!svn/ver/5602/CalDAVTester/trunk/Resource/CardDAV/sharing/addressbooks/read-only/5.vcf
+END
+4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repository/calendarserver/!svn/ver/5602/CalDAVTester/trunk/Resource/CardDAV/sharing/addressbooks/read-only/4.xml
+END
+6.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repository/calendarserver/!svn/ver/5602/CalDAVTester/trunk/Resource/CardDAV/sharing/addressbooks/read-only/6.vcf
+END

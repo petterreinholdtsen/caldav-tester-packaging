@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/notification-sync
+END
+1.ics
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/notification-sync/1.ics
+END
+2.ics
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/notification-sync/2.ics
+END
+3.ics
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/notification-sync/3.ics
+END

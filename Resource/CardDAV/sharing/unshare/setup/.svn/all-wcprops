@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/Resource/CardDAV/sharing/unshare/setup
+END
+3.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/Resource/CardDAV/sharing/unshare/setup/3.vcf
+END
+4.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/Resource/CardDAV/sharing/unshare/setup/4.vcf
+END
+g123.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/Resource/CardDAV/sharing/unshare/setup/g123.vcf
+END
+1.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/Resource/CardDAV/sharing/unshare/setup/1.vcf
+END
+2.vcf
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repository/calendarserver/!svn/ver/11562/CalDAVTester/trunk/Resource/CardDAV/sharing/unshare/setup/2.vcf
+END

@@ -1,0 +1,82 @@
+10
+
+dir
+13046
+http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/trunk/Resource/CardDAV
+http://svn.calendarserver.org/repository/calendarserver
+
+
+
+2014-02-07T18:59:49.730779Z
+12604
+cdaboo@apple.com
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+e27351fd-9f3e-4f54-a53b-843176b1656c
+
+mkcol
+dir
+
+vproppatches
+dir
+
+default-addressbook
+dir
+
+vab-client
+dir
+
+vreports
+dir
+
+vcopymove
+dir
+
+vcardput
+dir
+
+vnonascii
+dir
+
+vpropfinds
+dir
+
+sharing
+dir
+
+vcarderrors
+dir
+
+bulk
+dir
+
+add-member
+dir
+
+global-addressbook
+dir
+
+verrors
+dir
+
+vcurrent-user-principal
+dir
+
+directory-gateway
+dir
+
+vaclreports
+dir
+

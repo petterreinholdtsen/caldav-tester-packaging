@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repository/calendarserver/!svn/ver/7600/CalDAVTester/trunk/Resource/CardDAV/sharing/addressbooks/defaultaddressbook
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repository/calendarserver/!svn/ver/7600/CalDAVTester/trunk/Resource/CardDAV/sharing/addressbooks/defaultaddressbook/1.xml
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repository/calendarserver/!svn/ver/7600/CalDAVTester/trunk/Resource/CardDAV/sharing/addressbooks/defaultaddressbook/2.xml
+END

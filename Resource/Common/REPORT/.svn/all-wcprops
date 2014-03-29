@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT
+END
+all-calendardata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repository/calendarserver/!svn/ver/12348/CalDAVTester/trunk/Resource/Common/REPORT/all-calendardata.xml
+END
+sync-token1-level-1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT/sync-token1-level-1.xml
+END
+sync-token2-level-1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT/sync-token2-level-1.xml
+END
+sync-token3-level-1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT/sync-token3-level-1.xml
+END
+sync-init-level-1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT/sync-init-level-1.xml
+END
+sync-token4-level-1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT/sync-token4-level-1.xml
+END
+sync-token5-level-1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT/sync-token5-level-1.xml
+END
+sync-token6-level-1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT/sync-token6-level-1.xml
+END
+sync-token1-level-infinite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT/sync-token1-level-infinite.xml
+END
+sync-token2-level-infinite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT/sync-token2-level-infinite.xml
+END
+sync-token3-level-infinite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT/sync-token3-level-infinite.xml
+END
+sync-init-level-infinite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT/sync-init-level-infinite.xml
+END
+sync-token4-level-infinite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT/sync-token4-level-infinite.xml
+END
+sync-token5-level-infinite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT/sync-token5-level-infinite.xml
+END
+sync-token6-level-infinite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/12604/CalDAVTester/trunk/Resource/Common/REPORT/sync-token6-level-infinite.xml
+END

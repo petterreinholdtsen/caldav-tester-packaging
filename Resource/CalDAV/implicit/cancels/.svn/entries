@@ -1,0 +1,125 @@
+10
+
+dir
+13046
+http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/trunk/Resource/CalDAV/implicit/cancels
+http://svn.calendarserver.org/repository/calendarserver
+
+
+
+2014-01-15T16:21:14.612526Z
+12348
+cdaboo@apple.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e27351fd-9f3e-4f54-a53b-843176b1656c
+
+recurring-status-only
+dir
+
+recurring-remove-all
+dir
+
+recurring-delete-some
+dir
+
+partial-delete-all
+dir
+
+recurring-remove-twice
+dir
+
+recurring-delete-all
+dir
+
+time-shift-recurring
+dir
+
+non-recurring-status
+dir
+
+time-shift
+dir
+
+override-remove-some
+dir
+
+recurring-status
+dir
+
+non-recurring-remove
+dir
+
+time-shift-recurring-override
+dir
+
+partial-remove-some
+dir
+
+non-recurring-status-only
+dir
+
+non-recurring-delete
+dir
+
+time-shift-recurring-master-remove
+dir
+
+recurring-remove-some
+dir
+
+partial-remove-all
+dir
+
+partial-delete-some
+dir
+
+still-cancelled
+dir
+
+1.xml
+file
+
+
+
+
+2014-03-29T20:15:58.000000Z
+e402c18bbd9c13b5c7e64cba82852684
+2009-01-20T21:01:01.915188Z
+3600
+cdaboo@apple.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+132
+

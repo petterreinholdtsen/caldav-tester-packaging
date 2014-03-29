@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/sync
+END
+1.ics
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/sync/1.ics
+END
+2.ics
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12120/CalDAVTester/trunk/Resource/CalDAV-pod/sharing/sync/2.ics
+END

@@ -1,0 +1,19 @@
+K 13
+svn:mergeinfo
+V 1283
+/CalDAVTester/branches/release/CalDAVTester-3.0-dev/scripts/tests/CardDAV:7584
+/CalDAVTester/branches/release/CalDAVTester-4.3-dev/scripts/tests/CardDAV:10193
+/CalDAVTester/branches/users/cdaboo/attendee-comments-2887/scripts/tests/CardDAV:2888-2910
+/CalDAVTester/branches/users/cdaboo/better-proxy-3148/scripts/tests/CardDAV:3149-3163
+/CalDAVTester/branches/users/cdaboo/component-set-fixes/scripts/tests/CardDAV:8221-8346
+/CalDAVTester/branches/users/cdaboo/conditional-4466/scripts/tests/CardDAV:4467-4469
+/CalDAVTester/branches/users/cdaboo/implicitauto-2948/scripts/tests/CardDAV:2949-2989
+/CalDAVTester/branches/users/cdaboo/location-partial-accept-3574/scripts/tests/CardDAV:3575-3581
+/CalDAVTester/branches/users/cdaboo/managed-attachments/scripts/tests/CardDAV:9986-10145
+/CalDAVTester/branches/users/cdaboo/normalize-cuaddr-3533/scripts/tests/CardDAV:3534-3558
+/CalDAVTester/branches/users/cdaboo/pycalendar/scripts/tests/CardDAV:7160-7206
+/CalDAVTester/branches/users/cdaboo/pycard/scripts/tests/CardDAV:7226-7237
+/CalDAVTester/branches/users/cdaboo/sharing-5228/scripts/tests/CardDAV:5229-5440
+/CalDAVTester/branches/users/gaya/sharedgroupstester-2/scripts/tests/CardDAV:11078-11181
+/CalDAVTester/branches/users/gaya/sharedgroupstester-3/scripts/tests/CardDAV:11181-11204
+END

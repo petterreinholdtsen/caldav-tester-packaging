@@ -1,0 +1,46 @@
+10
+
+dir
+13046
+http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/trunk/Resource/CalDAV/implicit/scheduleagent
+http://svn.calendarserver.org/repository/calendarserver
+
+
+
+2014-03-12T21:14:36.211228Z
+12886
+cdaboo@apple.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e27351fd-9f3e-4f54-a53b-843176b1656c
+
+organizer-client-server
+dir
+
+no-attendee
+dir
+
+no-attendee-recurring-upgrade
+dir
+
+no-attendee-upgrade
+dir
+
+simple
+dir
+
+organizer-client
+dir
+

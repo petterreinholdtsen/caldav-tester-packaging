@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/src/unittest
+END
+test_jsonPointer.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repository/calendarserver/!svn/ver/10133/CalDAVTester/trunk/src/unittest/test_jsonPointer.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repository/calendarserver/!svn/ver/10301/CalDAVTester/trunk/src/unittest/__init__.py
+END

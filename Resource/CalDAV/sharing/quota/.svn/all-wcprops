@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/sharing/quota
+END
+1.ics
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/sharing/quota/1.ics
+END
+2.ics
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repository/calendarserver/!svn/ver/9361/CalDAVTester/trunk/Resource/CalDAV/sharing/quota/2.ics
+END

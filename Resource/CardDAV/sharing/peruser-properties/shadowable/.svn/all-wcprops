@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repository/calendarserver/!svn/ver/5602/CalDAVTester/trunk/Resource/CardDAV/sharing/peruser-properties/shadowable
+END
+1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repository/calendarserver/!svn/ver/5602/CalDAVTester/trunk/Resource/CardDAV/sharing/peruser-properties/shadowable/1.xml
+END
+2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repository/calendarserver/!svn/ver/5602/CalDAVTester/trunk/Resource/CardDAV/sharing/peruser-properties/shadowable/2.xml
+END
+3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repository/calendarserver/!svn/ver/5602/CalDAVTester/trunk/Resource/CardDAV/sharing/peruser-properties/shadowable/3.xml
+END

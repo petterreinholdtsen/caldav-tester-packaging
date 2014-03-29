@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repository/calendarserver/!svn/ver/12576/CalDAVTester/trunk/requirements
+END
+py_base.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repository/calendarserver/!svn/ver/12576/CalDAVTester/trunk/requirements/py_base.txt
+END
+py_develop.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repository/calendarserver/!svn/ver/12576/CalDAVTester/trunk/requirements/py_develop.txt
+END

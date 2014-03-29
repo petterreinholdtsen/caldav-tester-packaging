@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repository/calendarserver/!svn/ver/1753/CalDAVTester/trunk/data
+END
+calendar.10.tgz
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repository/calendarserver/!svn/ver/1753/CalDAVTester/trunk/data/calendar.10.tgz
+END
+calendar.100.tgz
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repository/calendarserver/!svn/ver/1753/CalDAVTester/trunk/data/calendar.100.tgz
+END
+calendar.1000.tgz
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repository/calendarserver/!svn/ver/1753/CalDAVTester/trunk/data/calendar.1000.tgz
+END

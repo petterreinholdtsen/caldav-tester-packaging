@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repository/calendarserver/!svn/ver/7213/CalDAVTester/trunk/Resource/CalDAV/freebusy
+END
+3.ics
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repository/calendarserver/!svn/ver/7213/CalDAVTester/trunk/Resource/CalDAV/freebusy/3.ics
+END
+1.ics
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repository/calendarserver/!svn/ver/7213/CalDAVTester/trunk/Resource/CalDAV/freebusy/1.ics
+END
+2.ics
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repository/calendarserver/!svn/ver/7213/CalDAVTester/trunk/Resource/CalDAV/freebusy/2.ics
+END

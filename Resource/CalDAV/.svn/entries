@@ -1,0 +1,220 @@
+10
+
+dir
+13046
+http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/trunk/Resource/CalDAV
+http://svn.calendarserver.org/repository/calendarserver
+
+
+
+2014-03-12T21:14:36.211228Z
+12886
+cdaboo@apple.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e27351fd-9f3e-4f54-a53b-843176b1656c
+
+availability
+dir
+
+implicit
+dir
+
+timezoneservice
+dir
+
+attachments
+dir
+
+errors
+dir
+
+acls
+dir
+
+prefer
+dir
+
+ical-client
+dir
+
+schedulecompatibility
+dir
+
+monitor
+dir
+
+brief
+dir
+
+sharing
+dir
+
+default-alarms
+dir
+
+depthreportsacl
+dir
+
+encodedURIs
+dir
+
+propfinds
+dir
+
+partitioning
+dir
+
+put
+dir
+
+rscale
+dir
+
+ctag
+dir
+
+aclreports
+dir
+
+scheduleprops
+dir
+
+privatecomments
+dir
+
+timezonestdservice
+dir
+
+acldisabled
+dir
+
+managedattachments
+dir
+
+quota
+dir
+
+polls
+dir
+
+schedule
+dir
+
+bad-json
+dir
+
+delete
+dir
+
+floating
+dir
+
+todo
+dir
+
+calendaruserproxy
+dir
+
+schedulemaskuid
+dir
+
+scheduleacl
+dir
+
+timezones
+dir
+
+dropbox
+dir
+
+current-user-principal
+dir
+
+get
+dir
+
+alarm-dismissal
+dir
+
+add-member
+dir
+
+problemics
+dir
+
+servertoserver
+dir
+
+performance
+dir
+
+caldaviop
+dir
+
+nonascii
+dir
+
+recurrence-splitting
+dir
+
+json
+dir
+
+duplicate-uids
+dir
+
+vtodos
+dir
+
+extended-freebusy
+dir
+
+expandproperty
+dir
+
+podding
+dir
+
+freebusy
+dir
+
+recurrenceput
+dir
+
+proppatches
+dir
+
+bad-ical
+dir
+
+webcal
+dir
+
+bulk
+dir
+
+reports
+dir
+
+privateevents
+dir
+
+mkcalendar
+dir
+
+copymove
+dir
+

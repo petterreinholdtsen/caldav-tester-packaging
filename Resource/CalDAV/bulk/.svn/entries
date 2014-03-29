@@ -1,0 +1,43 @@
+10
+
+dir
+13046
+http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/trunk/Resource/CalDAV/bulk
+http://svn.calendarserver.org/repository/calendarserver
+
+
+
+2012-06-25T16:10:40.609364Z
+9382
+cdaboo@apple.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e27351fd-9f3e-4f54-a53b-843176b1656c
+
+crud-ifmatch
+dir
+
+crud-multiple
+dir
+
+simple
+dir
+
+crud-one
+dir
+
+properties
+dir
+

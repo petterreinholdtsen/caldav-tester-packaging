@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repository/calendarserver/!svn/ver/12543/CalDAVTester/trunk/Resource/CalDAV/reports/multiget
+END
+doubleencoded1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repository/calendarserver/!svn/ver/5532/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/doubleencoded1.xml
+END
+doubleencoded2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repository/calendarserver/!svn/ver/8354/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/doubleencoded2.xml
+END
+1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12543/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/1.txt
+END
+2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12543/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/2.txt
+END
+3.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12543/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/3.txt
+END
+4.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12543/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/4.txt
+END
+encoded1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repository/calendarserver/!svn/ver/4923/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/encoded1.xml
+END
+5.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12543/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/5.txt
+END
+encoded2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repository/calendarserver/!svn/ver/8354/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/encoded2.xml
+END
+6.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12543/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/6.txt
+END
+7.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12543/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/7.txt
+END
+1b.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/8348/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/1b.xml
+END
+depth1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repository/calendarserver/!svn/ver/8354/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/depth1.txt
+END
+depth2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repository/calendarserver/!svn/ver/8354/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/depth2.txt
+END
+4b.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/8348/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/4b.xml
+END
+depth3.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repository/calendarserver/!svn/ver/8354/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/depth3.txt
+END
+5b.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/8348/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/5b.xml
+END
+depth4.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repository/calendarserver/!svn/ver/8354/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/depth4.txt
+END
+8.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repository/calendarserver/!svn/ver/12543/CalDAVTester/trunk/Resource/CalDAV/reports/multiget/8.xml
+END
