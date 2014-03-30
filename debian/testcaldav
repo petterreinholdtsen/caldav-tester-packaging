@@ -1,3 +1,15 @@
 #!/bin/sh
-export PYTHONPATH="/usr/share/caldavtester"
-/usr/share/caldavtester/testcaldav.py -x /usr/share/caldavtester/scripts/tests  $@
+
+set -e
+
+CALDAVTESTDIR=/usr/share/caldavtester
+export PYTHONPATH="$CALDAVTESTDIR"
+
+# FIXME: needed for resource files
+cd $CALDAVTESTDIR
+
+$CALDAVTESTDIR/testcaldav.py      \
+  -x $CALDAVTESTDIR/scripts/tests \
+  "$@"
+
+cd -
