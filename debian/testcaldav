@@ -1,0 +1,3 @@
+#!/bin/sh
+export PYTHONPATH="/usr/share/caldavtester"
+/usr/share/caldavtester/testcaldav.py $@
