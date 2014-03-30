@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+%:
+	dh $@ --with python2
+
+
+override_dh_auto_install:
+	dh_auto_install
+	pwd
+	mv debian/caldav-tester/usr/lib/python2.?/dist-packages/* debian/caldav-tester/usr/share/caldavtester/
+	rm -rf debian/caldav-tester/usr/lib

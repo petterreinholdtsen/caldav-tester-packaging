@@ -1,0 +1,5 @@
+caldav-tester (4.2~13046-1) UNRELEASED; urgency=low
+
+  * Initial release. (Closes: #742999)
+
+ -- Frank Piotrowski <f@pi0.de>  Sat, 29 Mar 2014 21:31:44 +0100

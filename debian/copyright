@@ -1,0 +1,23 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+
+Files: *
+Copyright: 2006-2014 Apple Inc.
+License: Apache 2.0 
+
+Files: debian/
+Copyright: 2014 Frank Piotrowski <f@pi0.de>
+License: GPL-2+
+
+Files: src/unittest/test_jsonPointer.py
+Copyright: 2012 Cyrus Daboo <cdaboo@apple.com>
+License: Apache 2.0
+
+License: Apache 2.0
+ On Debian systems, the full text of the Apache 2.0
+ License can be found in the file
+ `/usr/share/common-licenses/Apache-2.0'.
+
+License: GPL-2
+ On Debian systems, the full text of the GPL-2
+ License can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
