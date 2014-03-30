@@ -1,2 +1,3 @@
 testcaldav.py usr/share/caldavtester
+debian/testcaldav usr/bin
 
