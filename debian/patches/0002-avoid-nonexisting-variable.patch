@@ -1,0 +1,18 @@
+Description: Drop redundant message using non-existing variable ctr.
+ Python rejected the code without this patch.
+Author: Petter Reinholdtsen <pere@hungry.com>
+Last-Update: 2016-02-01
+
+diff --git a/src/manager.py b/src/manager.py
+index 0d2d6ea..44bf8c5 100644
+--- a/src/manager.py
++++ b/src/manager.py
+@@ -189,8 +189,6 @@ class manager(object):
+             if not all or not test.ignore_all:
+                 self.tests.append(test)
+ 
+-        self.message("load", None, ctr + 1, len(testfiles))
+-
+ 
+     def readCommandLine(self):
+         sname = "scripts/server/serverinfo.xml"
