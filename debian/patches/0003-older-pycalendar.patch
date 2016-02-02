@@ -3,6 +3,7 @@ Description: Work with the older python-calendar in Debian
  before version 6.0.
 Author: Petter Reinholdtsen <pere@hungry.com>
 Last-Update: 2016-02-02
+License: Apache 2 (same as caldav-tester itself)
 
 Index: caldav-tester-packaging/src/caldavtest.py
 ===================================================================

@@ -2,6 +2,7 @@ Description: Drop redundant message using non-existing variable ctr.
  Python rejected the code without this patch.
 Author: Petter Reinholdtsen <pere@hungry.com>
 Last-Update: 2016-02-01
+License: Apache 2 (same as caldav-tester itself)
 
 Index: caldav-tester-packaging/src/manager.py
 ===================================================================

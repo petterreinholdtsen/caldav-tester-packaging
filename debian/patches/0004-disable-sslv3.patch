@@ -2,6 +2,7 @@ Description: Disable SSL v3, as it is disabled in Debian
  Drop sslmodule.PROTOCOL_SSLv3 as it isn't provided by urllib.
 Author: Petter Reinholdtsen <pere@hungry.com>
 Last-Update: 2016-02-02
+License: Apache 2 (same as caldav-tester itself)
 
 diff --git a/src/httpshandler.py b/src/httpshandler.py
 index d2dec63..b7b7da4 100644
