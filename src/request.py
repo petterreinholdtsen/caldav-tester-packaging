@@ -1,5 +1,5 @@
 ##
-# Copyright (c) 2006-2013 Apple Inc. All rights reserved.
+# Copyright (c) 2006-2015 Apple Inc. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -140,6 +140,8 @@ class request(object):
     be used to determine a satisfactory output or not.
     """
 
+    nc = {} # Keep track of nonce count
+
     def __init__(self, manager):
         self.manager = manager
         self.host = self.manager.server_info.host
@@ -157,6 +159,7 @@ class request(object):
         self.headers = {}
         self.ruris = []
         self.ruri = ""
+        self.ruri_quote = True
         self.data = None
         self.iterate_data = False
         self.count = 1
@@ -166,6 +169,7 @@ class request(object):
         self.grabheader = []
         self.grabproperty = []
         self.grabelement = []
+        self.grabjson = []
         self.grabcalprop = []
         self.grabcalparam = []
 
@@ -185,9 +189,11 @@ class request(object):
     def getURI(self, si):
         uri = si.extrasubs(self.ruri)
         if "**" in uri:
-            uri = uri.replace("**", str(uuid.uuid4()))
+            if "?" not in uri or uri.find("?") > uri.find("**"):
+                uri = uri.replace("**", str(uuid.uuid4()))
         elif "##" in uri:
-            uri = uri.replace("##", str(self.count))
+            if "?" not in uri or uri.find("?") > uri.find("##"):
+                uri = uri.replace("##", str(self.count))
         return uri
 
 
@@ -241,7 +247,7 @@ class request(object):
 
                 wwwauthorize = response.msg.getheaders("WWW-Authenticate")
                 for item in wwwauthorize:
-                    if not item.startswith("digest "):
+                    if not item.lower().startswith("digest "):
                         continue
                     wwwauthorize = item[7:]
                     def unq(s):
@@ -259,9 +265,18 @@ class request(object):
                     break
 
         if details:
+            if details.get('qop'):
+                if self.nc.get(details.get('nonce')) is None:
+                    self.nc[details.get('nonce')] = 1
+                else:
+                    self.nc[details.get('nonce')] += 1
+                details['nc'] = "%08x" % self.nc[details.get('nonce')]
+                if details.get('cnonce') is None:
+                    details['cnonce'] = "D4AAE4FF-ADA1-4149-BFE2-B506F9264318"
+
             digest = calcResponse(
-                calcHA1(details.get('algorithm'), user, details.get('realm'), pswd, details.get('nonce'), details.get('cnonce')),
-                details.get('algorithm'), details.get('nonce'), details.get('nc'), details.get('cnonce'), details.get('qop'), self.method, self.getURI(si), None
+                calcHA1(details.get('algorithm', 'md5'), user, details.get('realm'), pswd, details.get('nonce'), details.get('cnonce')),
+                details.get('algorithm', 'md5'), details.get('nonce'), details.get('nc'), details.get('cnonce'), details.get('qop'), self.method, self.getURI(si), None
             )
 
             if details.get('qop'):
@@ -269,7 +284,7 @@ class request(object):
                     'Digest username="%s", realm="%s", '
                     'nonce="%s", uri="%s", '
                     'response=%s, algorithm=%s, cnonce="%s", qop=%s, nc=%s' %
-                    (user, details.get('realm'), details.get('nonce'), self.getURI(si), digest, details.get('algorithm'), details.get('cnonce'), details.get('qop'), details.get('nc'),)
+                    (user, details.get('realm'), details.get('nonce'), self.getURI(si), digest, details.get('algorithm', 'md5'), details.get('cnonce'), details.get('qop'), details.get('nc'),)
                 )
             else:
                 response = (
@@ -286,7 +301,7 @@ class request(object):
 
     def getFilePath(self):
         if self.data != None:
-            return self.data.filepath
+            return os.path.join(self.manager.data_dir, self.data.filepath) if self.manager.data_dir else self.data.filepath
         else:
             return ""
 
@@ -296,9 +311,9 @@ class request(object):
         if self.data != None:
             if len(self.data.value) != 0:
                 data = self.data.value
-            else:
+            elif self.data.filepath:
                 # read in the file data
-                fd = open(self.data.nextpath if hasattr(self.data, "nextpath") else self.data.filepath, "r")
+                fd = open(self.data.nextpath if hasattr(self.data, "nextpath") else self.getFilePath(), "r")
                 try:
                     data = fd.read()
                 finally:
@@ -306,17 +321,21 @@ class request(object):
             data = str(self.manager.server_info.subs(data))
             self.manager.server_info.addextrasubs({"$request_count:": str(self.count)})
             data = self.manager.server_info.extrasubs(data)
+            if self.data.substitutions:
+                data = self.manager.server_info.subs(data, self.data.substitutions)
             if self.data.generate:
                 if self.data.content_type.startswith("text/calendar"):
                     data = self.generateCalendarData(data)
+            elif self.data.generator:
+                data = self.data.generator.doGenerate()
         return data
 
 
     def getNextData(self):
         if not hasattr(self, "dataList"):
-            self.dataList = sorted([path for path in os.listdir(self.data.filepath) if not path.startswith(".")])
+            self.dataList = sorted([path for path in os.listdir(self.getFilePath()) if not path.startswith(".")])
         if len(self.dataList):
-            self.data.nextpath = os.path.join(self.data.filepath, self.dataList.pop(0))
+            self.data.nextpath = os.path.join(self.getFilePath(), self.dataList.pop(0))
             return True
         else:
             if hasattr(self.data, "nextpath"):
@@ -327,7 +346,7 @@ class request(object):
 
 
     def hasNextData(self):
-        dataList = sorted([path for path in os.listdir(self.data.filepath) if not path.startswith(".")])
+        dataList = sorted([path for path in os.listdir(self.getFilePath()) if not path.startswith(".")])
         return len(dataList) != 0
 
 
@@ -373,11 +392,12 @@ class request(object):
             elif child.tag == src.xmlDefs.ELEMENT_HEADER:
                 self.parseHeader(child)
             elif child.tag == src.xmlDefs.ELEMENT_RURI:
+                self.ruri_quote = child.get(src.xmlDefs.ATTR_QUOTE, src.xmlDefs.ATTR_VALUE_YES) == src.xmlDefs.ATTR_VALUE_YES
                 self.ruris.append(self.manager.server_info.subs(child.text.encode("utf-8")))
                 if len(self.ruris) == 1:
                     self.ruri = self.ruris[0]
             elif child.tag == src.xmlDefs.ELEMENT_DATA:
-                self.data = data()
+                self.data = data(self.manager)
                 self.data.parseXML(child)
             elif child.tag == src.xmlDefs.ELEMENT_VERIFY:
                 self.verifiers.append(verify(self.manager))
@@ -392,6 +412,8 @@ class request(object):
                 self.parseGrab(child, self.grabproperty)
             elif child.tag == src.xmlDefs.ELEMENT_GRABELEMENT:
                 self.parseMultiGrab(child, self.grabelement)
+            elif child.tag == src.xmlDefs.ELEMENT_GRABJSON:
+                self.parseMultiGrab(child, self.grabjson)
             elif child.tag == src.xmlDefs.ELEMENT_GRABCALPROP:
                 self.parseGrab(child, self.grabcalprop)
             elif child.tag == src.xmlDefs.ELEMENT_GRABCALPARAM:
@@ -437,7 +459,7 @@ class request(object):
         variable = None
         for child in node.getchildren():
             if child.tag in (src.xmlDefs.ELEMENT_NAME, src.xmlDefs.ELEMENT_PROPERTY):
-                name = child.text.encode("utf-8")
+                name = self.manager.server_info.subs(child.text.encode("utf-8"))
             elif child.tag == src.xmlDefs.ELEMENT_VARIABLE:
                 variable = self.manager.server_info.subs(child.text.encode("utf-8"))
 
@@ -451,7 +473,7 @@ class request(object):
         parent = None
         variable = None
         for child in node.getchildren():
-            if child.tag in (src.xmlDefs.ELEMENT_NAME, src.xmlDefs.ELEMENT_PROPERTY):
+            if child.tag in (src.xmlDefs.ELEMENT_NAME, src.xmlDefs.ELEMENT_PROPERTY, src.xmlDefs.ELEMENT_POINTER):
                 name = self.manager.server_info.subs(child.text.encode("utf-8"))
             elif child.tag == src.xmlDefs.ELEMENT_PARENT:
                 parent = self.manager.server_info.subs(child.text.encode("utf-8"))
@@ -470,10 +492,13 @@ class data(object):
     Represents the data/body portion of an HTTP request.
     """
 
-    def __init__(self):
+    def __init__(self, manager):
+        self.manager = manager
         self.content_type = ""
         self.filepath = ""
+        self.generator = None
         self.value = ""
+        self.substitutions = {}
         self.substitute = False
         self.generate = False
 
@@ -488,6 +513,84 @@ class data(object):
                 self.content_type = child.text.encode("utf-8")
             elif child.tag == src.xmlDefs.ELEMENT_FILEPATH:
                 self.filepath = child.text.encode("utf-8")
+            elif child.tag == src.xmlDefs.ELEMENT_GENERATOR:
+                self.generator = generator(self.manager)
+                self.generator.parseXML(child)
+            elif child.tag == src.xmlDefs.ELEMENT_SUBSTITUTE:
+                self.parseSubstituteXML(child)
+
+
+    def parseSubstituteXML(self, node):
+        name = None
+        value = None
+        for child in node.getchildren():
+            if child.tag == src.xmlDefs.ELEMENT_NAME:
+                name = child.text.encode("utf-8")
+            elif child.tag == src.xmlDefs.ELEMENT_VALUE:
+                value = self.manager.server_info.subs(child.text.encode("utf-8"))
+        if name and value:
+            self.substitutions[name] = value
+
+
+
+class generator(object):
+    """
+    Defines a dynamically generated request body.
+    """
+
+    def __init__(self, manager):
+        self.manager = manager
+        self.callback = None
+        self.args = {}
+
+
+    def doGenerate(self):
+
+        # Re-do substitutions from values generated during the current test run
+        if self.manager.server_info.hasextrasubs():
+            for name, values in self.args.iteritems():
+                newvalues = [self.manager.server_info.extrasubs(value) for value in values]
+                self.args[name] = newvalues
+
+        generatorClass = self._importName(self.callback, "Generator")
+        gen = generatorClass()
+
+        # Always clone the args as this verifier may be called multiple times
+        args = dict((k, list(v)) for k, v in self.args.items())
+
+        return gen.generate(self.manager, args)
+
+
+    def _importName(self, modulename, name):
+        """
+        Import a named object from a module in the context of this function.
+        """
+        module = __import__(modulename, globals(), locals(), [name])
+        return getattr(module, name)
+
+
+    def parseXML(self, node):
+
+        for child in node.getchildren():
+            if child.tag == src.xmlDefs.ELEMENT_CALLBACK:
+                self.callback = child.text.encode("utf-8")
+            elif child.tag == src.xmlDefs.ELEMENT_ARG:
+                self.parseArgXML(child)
+
+
+    def parseArgXML(self, node):
+        name = None
+        values = []
+        for child in node.getchildren():
+            if child.tag == src.xmlDefs.ELEMENT_NAME:
+                name = child.text.encode("utf-8")
+            elif child.tag == src.xmlDefs.ELEMENT_VALUE:
+                if child.text is not None:
+                    values.append(self.manager.server_info.subs(child.text.encode("utf-8")))
+                else:
+                    values.append("")
+        if name:
+            self.args[name] = values
 
 
 

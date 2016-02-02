@@ -1,5 +1,5 @@
 <!--
- Copyright (c) 2006-2013 Apple Inc. All rights reserved.
+ Copyright (c) 2006-2015 Apple Inc. All rights reserved.
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@
 	<!ELEMENT pause EMPTY>
 
 	<!ELEMENT request (require-feature?, exclude-feature?, method, ruri*, header*, data?, verify*,
-						graburi?, grabcount?, grabheader*, grabproperty*, grabelement*, grabcalproperty*, grabcalparameter*)>
+						graburi?, grabcount?, grabheader*, grabproperty*, grabelement*, grabjson*, grabcalproperty*, grabcalparameter*)>
 		<!ATTLIST request host2 (yes|no) "no"
 						 auth (yes|no) "yes"
 						 user CDATA ""
@@ -42,14 +42,17 @@
 		
 		<!ELEMENT method (#PCDATA)>
 		<!ELEMENT ruri (#PCDATA)>
+			<!ATTLIST ruri quote (yes|no) "yes">
 		<!ELEMENT header (name, value)>
 			<!ELEMENT name (#PCDATA)>
 			<!ELEMENT value (#PCDATA)>
-		<!ELEMENT data (content-type, filepath)>
+		<!ELEMENT data (content-type, (filepath | generator), substitute*)>
 			<!ATTLIST data substitutions (yes|no) "yes"
 			               generate      (yes|no) "no">
 			<!ELEMENT content-type (#PCDATA)>
 			<!ELEMENT filepath (#PCDATA)>
+			<!ELEMENT generator (callback, arg*)>
+			<!ELEMENT substitute (name, value)>
 
 		<!ELEMENT verify (require-feature?, exclude-feature?, callback, arg*)>
 			
@@ -67,6 +70,8 @@
 			<!ELEMENT variable (#PCDATA)>
 
 		<!ELEMENT grabelement (name, parent*, variable+)>
+
+		<!ELEMENT grabjson (pointer, variable+)>
 
 		<!ELEMENT grabcalproperty (name, variable)>
 		<!ELEMENT grabcalparameter (name, variable)>

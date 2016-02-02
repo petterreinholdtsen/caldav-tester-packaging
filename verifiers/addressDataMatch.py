@@ -1,5 +1,5 @@
 ##
-# Copyright (c) 2006-2013 Apple Inc. All rights reserved.
+# Copyright (c) 2006-2015 Apple Inc. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,6 +16,7 @@
 
 from difflib import unified_diff
 from pycalendar.vcard.card import Card
+import os
 
 """
 Verifier that checks the response body for a semantic match to data in a file.
@@ -26,6 +27,8 @@ class Verifier(object):
     def verify(self, manager, uri, response, respdata, args, is_json=False): #@UnusedVariable
         # Get arguments
         files = args.get("filepath", [])
+        if manager.data_dir:
+            files = map(lambda x: os.path.join(manager.data_dir, x), files)
         carddata = args.get("data", [])
         filters = args.get("filter", [])
 

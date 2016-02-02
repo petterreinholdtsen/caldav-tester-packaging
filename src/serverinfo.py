@@ -1,5 +1,5 @@
 ##
-# Copyright (c) 2006-2013 Apple Inc. All rights reserved.
+# Copyright (c) 2006-2015 Apple Inc. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -149,9 +149,10 @@ class serverinfo(object):
 
 
     def newUIDs(self):
-        uidsubs = dict([("$uid{}:".format(i), str(uuid4())) for i in range(1, 21)])
+        uidsubs = dict([("$uid{u}:".format(u=i), str(uuid4())) for i in range(1, 21)])
         self.subsdict.update(uidsubs)
         self.extrasubsdict.update(uidsubs)
+        return set([(v, k) for k, v in uidsubs.items()])
 
 
     def parseXML(self, node):
@@ -205,12 +206,14 @@ class serverinfo(object):
             self.subsdict[k] = v
 
         # Now cache some useful substitutions
-        if "$userid1:" not in self.subsdict:
-            raise ValueError("Must have $userid1: substitution")
-        self.user = self.subsdict["$userid1:"]
-        if "$pswd1:" not in self.subsdict:
-            raise ValueError("Must have $pswd1: substitution")
-        self.pswd = self.subsdict["$pswd1:"]
+        user = "$userid1:" if "$userid1:" in self.subsdict else "$userid01:"
+        pswd = "$pswd1:" if "$pswd1:" in self.subsdict else "$pswd01:"
+        if user not in self.subsdict:
+            raise ValueError("Must have userid substitution")
+        self.user = self.subsdict[user]
+        if pswd not in self.subsdict:
+            raise ValueError("Must have pswd substitution")
+        self.pswd = self.subsdict[pswd]
 
 
     def parseRepeatXML(self, node):
