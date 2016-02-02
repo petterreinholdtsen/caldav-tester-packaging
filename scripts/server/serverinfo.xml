@@ -23,22 +23,24 @@
 	<nonsslport>8008</nonsslport>
 	<sslport>8443</sslport>
 	<authtype>basic</authtype>
-	
+
 	<waitcount>120</waitcount>
 	<waitdelay>0.25</waitdelay>
+	<waitsuccess>30</waitsuccess>
 
 	<features>
 		<!--  Generic WebDAV extensions -->
 		<feature>COPY Method</feature>							<!-- COPY method -->
 		<feature>MOVE Method</feature>							<!-- MOVE method -->
 		<feature>Extended MKCOL</feature>						<!-- Extended MKCOL -->
-		
+
 		<!-- ACL related -->
 		<feature>ACL Method</feature>							<!-- ACL method -->
 		<feature>acl-principal-prop-set REPORT</feature>		<!-- ACL acl-principal-prop-set REPORT -->
 		<feature>principal-match REPORT</feature>				<!-- ACL principal-match REPORT -->
 		<feature>principal-property-search REPORT</feature>		<!-- ACL principal-property-search REPORT -->
 		<feature>principal-search-property-set REPORT</feature>	<!-- ACL principal-search-property-set REPORT -->
+		<feature>calendarserver-principal-search REPORT</feature>	<!-- ACL calendarserver-principal-search REPORT -->
 
 		<feature>add-member</feature>					<!-- Add-member used to create resources -->
 		<!-- <feature>auth-on-root</feature> -->		<!-- Whether the server requires authentication on the root URI -->
@@ -73,10 +75,11 @@
 		<feature>attachments-collection</feature>		<!-- Server uses a collection in same WebDAV tree to store attachments -->
 		<feature>auto-accept</feature>					<!-- Auto-accept for rooms & locations -->
 		<feature>auto-accept-modes</feature>			<!-- Auto-accept modes -->
-		<!--<feature>dropbox</feature> -->				<!-- dropbox extension -->
+		<!-- <feature>dropbox</feature> -->				<!-- dropbox extension -->
 		<feature>default-alarms</feature>				<!-- default alarms extension -->
 		<feature>EMAIL parameter</feature>				<!-- Server normalizes cuaddress and adds EMAIL parameter -->
 		<feature>extended-freebusy</feature>	      	<!-- Extended freebusy response -->
+		<!-- <feature>group-attendee-expansion</feature> -->	    <!-- Auto-expansion of group attendees -->
 		<feature>implicit-scheduling</feature>			<!-- CalDAV scheduling - implicit -->
 		<feature>location-resource-tracking</feature>   <!-- Server tracks who makes unscheduled changes to locations and resources -->
 		<feature>managed-attachments</feature>			<!-- CalDAV Managed Attachments -->
@@ -92,6 +95,7 @@
 		<feature>remove-duplicate-alarms</feature>   	<!-- Server removes any duplicate alarms on PUT -->
 		<feature>query-extended</feature>				<!-- calendar-query-extended extension -->
 		<feature>shared-calendars</feature>				<!-- Shared calendars extension -->
+		<!-- <feature>share-calendars-to-groups</feature> -->	<!-- Share calendars to groups extension -->
 		<feature>schedule-changes</feature>				<!-- schedule-changes property extension -->
 		<feature>split-calendars</feature>				<!-- Calendars are split by component type -->
 		<feature>supported-component-sets</feature>		<!-- CALDAV:supported-calendar-component-sets on calendar homes -->
@@ -101,6 +105,7 @@
 		<feature>timezones-by-reference</feature>		<!-- Timezones by reference enabled -->
 		<feature>timezone-service</feature>				<!-- Timezone service extension for Wiki -->
 		<feature>timezone-std-service</feature>			<!-- Timezone standard service extension -->
+		<feature>travel-time-busy</feature> 			<!-- Travel time appears as busy -->
 		<feature>vavailability</feature>				<!-- VAVAILABILITY on inbox -->
 		<!-- <feature>vpoll</feature> -->				<!-- VPOLL support for store and scheduling -->
 		<feature>webcal</feature>						<!-- Internet calendar subscription via GET on calendar collection -->
@@ -109,7 +114,8 @@
 		<feature>carddav</feature> 						<!-- Basic CardDAV feature enabler -->
 		<feature>default-addressbook</feature> 			<!-- Default address book behavior -->
 		<feature>shared-addressbooks</feature>			<!-- Shared address books extension -->
-		<!-- <feature>directory-gateway</feature> -->	<!-- Directory gateway extension -->
+		<feature>shared-addressbook-groups</feature>	<!-- Shared address book groups extension -->
+		<feature>directory-gateway</feature>			<!-- Directory gateway extension -->
 
 	</features>
 
@@ -228,10 +234,6 @@
 			<value>$calendars:$userstype:/</value>
 		</substitution>
 		<substitution>
-			<key>$calendars_groups:</key>
-			<value>$calendars:$groupstype:/</value>
-		</substitution>
-		<substitution>
 			<key>$calendars_resources:</key>
 			<value>$calendars:$resourcestype:/</value>
 		</substitution>
@@ -327,10 +329,6 @@
 			<key>$addressbooks_users:</key>
 			<value>$addressbooks:$userstype:/</value>
 		</substitution>
-		<substitution>
-			<key>$addressbooks_groups:</key>
-			<value>$addressbooks:$groupstype:/</value>
-		</substitution>
 
 		<!-- primary addressbook name -->
 		<substitution>
@@ -358,7 +356,7 @@
 		<!-- guid for admin user -->
 		<substitution>
 			<key>$useradminguid:</key>
-			<value>admin</value>
+			<value>0C8BDE62-E600-4696-83D3-8B5ECABDFD2E</value>
 		</substitution>
 		<!-- password for admin user -->
 		<substitution>
@@ -384,7 +382,7 @@
 		<!-- guid for apprentice user -->
 		<substitution>
 			<key>$userapprenticeguid:</key>
-			<value>apprentice</value>
+			<value>29B6C503-11DF-43EC-8CCA-40C7003149CE</value>
 		</substitution>
 		<!-- password for admin user -->
 		<substitution>
@@ -423,7 +421,7 @@
 			<!-- user guid -->
 			<substitution>
 				<key>$userguid%d:</key>
-				<value>user%02d</value>
+				<value>10000000-0000-0000-0000-000000000%03d</value>
 			</substitution>
 			<!-- user name -->
 			<substitution>
@@ -530,15 +528,15 @@
 			</substitution>
 			<substitution>
 				<key>$cuaddralt%d:</key>
-				<value>$principaluri%d:</value>
+				<value>$cuaddr%d:</value>
 			</substitution>
 			<substitution>
 				<key>$cuaddraltnoslash%d:</key>
-				<value>$principals_uids:$userguid%d:</value>
+				<value>$cuaddr%d:</value>
 			</substitution>
 			<substitution>
 				<key>$cuaddrurn%d:</key>
-				<value>urn:uuid:$userguid%d:</value>
+				<value>urn:x-uid:$userguid%d:</value>
 			</substitution>
 
 			<!-- relative path to user addressbook home-->
@@ -563,7 +561,7 @@
 			<!-- user guid -->
 			<substitution>
 				<key>$publicuserguid%d:</key>
-				<value>public%02d</value>
+				<value>50000000-0000-0000-0000-0000000000%02d</value>
 			</substitution>
 			<!-- user name -->
 			<substitution>
@@ -605,11 +603,11 @@
 			</substitution>
 			<substitution>
 				<key>$publiccuaddralt%d:</key>
-				<value>$publicprincipaluri%d:</value>
+				<value>$publiccuaddr%d:</value>
 			</substitution>
 			<substitution>
 				<key>$publiccuaddrurn%d:</key>
-				<value>urn:uuid:$publicuserguid%d:</value>
+				<value>urn:x-uid:$publicuserguid%d:</value>
 			</substitution>
 		</repeat>
 
@@ -622,7 +620,7 @@
 			<!-- resource guid-->
 			<substitution>
 				<key>$resourceguid%d:</key>
-				<value>resource%02d</value>
+				<value>40000000-0000-0000-0000-000000000%03d</value>
 			</substitution>
 			<!-- resource name-->
 			<substitution>
@@ -660,11 +658,11 @@
 			</substitution>
 			<substitution>
 				<key>$rcuaddralt%d:</key>
-				<value>$rprincipaluri%d:</value>
+				<value>$rcuaddrurn%d:</value>
 			</substitution>
 			<substitution>
 				<key>$rcuaddrurn%d:</key>
-				<value>urn:uuid:$resourceguid%d:</value>
+				<value>urn:x-uid:$resourceguid%d:</value>
 			</substitution>
 		</repeat>
 
@@ -677,7 +675,7 @@
 			<!-- location guid-->
 			<substitution>
 				<key>$locationguid%d:</key>
-				<value>location%02d</value>
+				<value>30000000-0000-0000-0000-000000000%03d</value>
 			</substitution>
 			<!-- location name-->
 			<substitution>
@@ -719,7 +717,7 @@
 			</substitution>
 			<substitution>
 				<key>$lcuaddrurn%d:</key>
-				<value>urn:uuid:$locationguid%d:</value>
+				<value>urn:x-uid:$locationguid%d:</value>
 			</substitution>
 		</repeat>
 
@@ -733,7 +731,7 @@
 			<!-- group guid-->
 			<substitution>
 				<key>$groupguid%d:</key>
-				<value>group%02d</value>
+				<value>20000000-0000-0000-0000-000000000%03d</value>
 			</substitution>
 			<!-- group name-->
 			<substitution>
@@ -750,12 +748,16 @@
 				<value>$principals_uids:$groupguid%d:/</value>
 			</substitution>
 			<substitution>
+				<key>$gemail%d:</key>
+				<value>$groupid%d:@example.com</value>
+			</substitution>
+			<substitution>
 				<key>$gcuaddralt%d:</key>
 				<value>$gprincipaluri%d:</value>
 			</substitution>
 			<substitution>
 				<key>$gcuaddrurn%d:</key>
-				<value>urn:uuid:$groupguid%d:</value>
+				<value>urn:x-uid:$groupguid%d:</value>
 			</substitution>
 		</repeat>
 
@@ -767,7 +769,7 @@
 		<!-- group guid-->
 		<substitution>
 			<key>$i18nguid:</key>
-			<value>i18nuser</value>
+			<value>860B3EE9-6D7C-4296-9639-E6B998074A78</value>
 		</substitution>
 		<!-- group name-->
 		<substitution>
@@ -795,7 +797,7 @@
 		</substitution>
 		<substitution>
 			<key>$i18ncuaddrurn:</key>
-			<value>urn:uuid:$i18nguid:</value>
+			<value>urn:x-uid:$i18nguid:</value>
 		</substitution>
 
 		<!-- relative path to disabled group principal resource-->

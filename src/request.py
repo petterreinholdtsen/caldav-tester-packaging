@@ -265,13 +265,19 @@ class request(object):
             )
 
             if details.get('qop'):
-                response = ('Digest username="%s", realm="%s", '
-                        'nonce="%s", uri="%s", '
-                        'response=%s, algorithm=%s, cnonce="%s", qop=%s, nc=%s' % (user, details.get('realm'), details.get('nonce'), self.getURI(si), digest, details.get('algorithm'), details.get('cnonce'), details.get('qop'), details.get('nc'),))
+                response = (
+                    'Digest username="%s", realm="%s", '
+                    'nonce="%s", uri="%s", '
+                    'response=%s, algorithm=%s, cnonce="%s", qop=%s, nc=%s' %
+                    (user, details.get('realm'), details.get('nonce'), self.getURI(si), digest, details.get('algorithm'), details.get('cnonce'), details.get('qop'), details.get('nc'),)
+                )
             else:
-                response = ('Digest username="%s", realm="%s", '
-                        'nonce="%s", uri="%s", '
-                        'response=%s, algorithm=%s' % (user, details.get('realm'), details.get('nonce'), self.getURI(si), digest, details.get('algorithm'),))
+                response = (
+                    'Digest username="%s", realm="%s", '
+                    'nonce="%s", uri="%s", '
+                    'response=%s, algorithm=%s' %
+                    (user, details.get('realm'), details.get('nonce'), self.getURI(si), digest, details.get('algorithm'),)
+                )
 
             return response
         else:
@@ -519,7 +525,11 @@ class verify(object):
 
         verifierClass = self._importName("verifiers." + self.callback, "Verifier")
         verifier = verifierClass()
-        return verifier.verify(self.manager, uri, response, respdata, self.args)
+
+        # Always clone the args as this verifier may be called multiple times
+        args = dict((k, list(v)) for k, v in self.args.items())
+
+        return verifier.verify(self.manager, uri, response, respdata, args)
 
 
     def _importName(self, modulename, name):
