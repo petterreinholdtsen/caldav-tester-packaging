@@ -132,8 +132,8 @@ locationcreatecmd = """<?xml version="1.0" encoding="UTF-8"?>
 <dict>
         <key>command</key>
         <string>createLocation</string>
-        <key>AutoSchedule</key>
-        <true/>
+        <key>AutoScheduleMode</key>
+        <string>acceptIfFreeDeclineIfBusy</string>
         <key>GeneratedUID</key>
         <string>%(guid)s</string>
         <key>RealName</key>
@@ -174,8 +174,8 @@ resourcecreatecmd = """<?xml version="1.0" encoding="UTF-8"?>
 <dict>
         <key>command</key>
         <string>createResource</string>
-        <key>AutoSchedule</key>
-        <true/>
+        <key>AutoScheduleMode</key>
+        <string>acceptIfFreeDeclineIfBusy</string>
         <key>GeneratedUID</key>
         <string>%(guid)s</string>
         <key>RealName</key>
@@ -215,7 +215,7 @@ resourcelistcmd = """<?xml version="1.0" encoding="UTF-8"?>
 """
 
 locationattrs = {
-    "dsAttrTypeStandard:RealName": "Room %02d",
+    "dsAttrTypeStandard:RealName": "Location %02d",
 }
 
 delegatedroomattrs = {
@@ -227,7 +227,8 @@ resourceattrs = {
 }
 
 groupattrs = {
-        "dsAttrTypeStandard:RealName": "Group %02d",
+    "dsAttrTypeStandard:RealName": "Group %02d",
+    "dsAttrTypeStandard:EMailAddress": "group%02d@example.com",
 }
 
 records = (
@@ -331,6 +332,7 @@ def patchConfig(admin):
        * iMIP is disabled
        * SACLs are disabled
        * EnableAnonymousReadRoot is enabled
+       * WorkQueue timings are appropriate for testing (low delay)
 
     @param admin: admin principal-URL value
     @type admin: str
@@ -352,7 +354,20 @@ def patchConfig(admin):
     plist["EnableAnonymousReadRoot"] = True
     if "Options" not in plist["Scheduling"]:
         plist["Scheduling"]["Options"] = dict()
-    plist["Scheduling"]["Options"]["AttendeeRefreshBatch"] = 0
+
+    # Lower WorkQueue timings to reduce processing delay
+    plist["Scheduling"]["Options"]["WorkQueues"] = {
+        "Enabled" : True,
+        "RequestDelaySeconds" : 0.1,
+        "ReplyDelaySeconds" : 1,
+        "AutoReplyDelaySeconds" : 0.1,
+        "AttendeeRefreshBatchDelaySeconds" : 0.1,
+        "AttendeeRefreshBatchIntervalSeconds" : 0.1,
+    }
+    plist["WorkQueue"] = {
+        "failureRescheduleInterval": 1,
+        "lockRescheduleInterval": 1,
+    }
 
     writePlist(plist, conf_root + "/caldavd-user.plist")
 
@@ -395,41 +410,20 @@ def buildServerinfo(serverinfo_default, hostname, nonsslport, sslport, authtype,
     for x, y in subs:
         subs_str += subs_template % (x, y,)
 
-    data = data % {
-        "hostname"       : hostname,
-        "nonsslport"     : str(nonsslport),
-        "sslport"        : str(sslport),
-        "authtype"       : authtype,
-        "overrides"      : subs_str,
-    }
+    data = data.format(
+        hostname=hostname,
+        nonsslport=str(nonsslport),
+        sslport=str(sslport),
+        authtype=authtype,
+        overrides=subs_str,
+        DAV="{DAV:}",
+    )
 
     fd = open(serverinfo_default, "w")
     try:
         fd.write(data)
     finally:
         fd.close()
-
-
-
-def addLargeCalendars(hostname, docroot):
-    largeCalendarUser = "user09"
-    calendars = ("calendar.10", "calendar.100", "calendar.1000",)
-    largeGuid = guids[largeCalendarUser]
-    path = os.path.join(
-        docroot,
-        "calendars",
-        "__uids__",
-        largeGuid[0:2],
-        largeGuid[2:4],
-        largeGuid,
-    )
-
-    cmd("mkdir -p \"%s\"" % (docroot))
-    cmd("chown calendar:calendar \"%s\"" % (docroot))
-    for calendar in calendars:
-        cmd("sudo -u calendar mkdir -p \"%s\"" % (path))
-        cmd("sudo -u calendar tar -C \"%s\" -zx -f data/%s.tgz" % (path, calendar,))
-        cmd("chown -R calendar:calendar \"%s\"" % (os.path.join(path, calendar) ,))
 
 
 
@@ -552,7 +546,8 @@ def createUserViaGateway(path, user):
     if user[0] in guids:
         guids[user[0]] = guid
     if path == "/Places":
-        cmd(cmdutility,
+        cmd(
+            cmdutility,
             locationcreatecmd % {
                 "guid": guid,
                 "realname": user[2]["dsAttrTypeStandard:RealName"],
@@ -560,7 +555,8 @@ def createUserViaGateway(path, user):
             }
         )
     elif path == "/Resources":
-        cmd(cmdutility,
+        cmd(
+            cmdutility,
             resourcecreatecmd % {
                 "guid": guid,
                 "realname": user[2]["dsAttrTypeStandard:RealName"],
@@ -595,14 +591,16 @@ def removeUserViaGateway(path, user):
         if user[0] not in locations:
             return
         guid = locations[user[0]]
-        cmd(cmdutility,
+        cmd(
+            cmdutility,
             locationremovecmd % {"guid": guid, }
         )
     elif path == "/Resources":
         if user[0] not in resources:
             return
         guid = resources[user[0]]
-        cmd(cmdutility,
+        cmd(
+            cmdutility,
             resourceremovecmd % {"guid": guid, }
         )
     else:
@@ -619,18 +617,18 @@ def manageRecords(path, user):
     if path in ("/Places", "/Resources",):
         if path in ("/Places",):
             if user[0] == "delegatedroom":
-                cmd("%s --add-write-proxy groups:group05 --add-read-proxy groups:group07 --set-auto-schedule=false locations:%s" % (
+                cmd("%s --add-write-proxy groups:group05 --add-read-proxy groups:group07 --set-auto-schedule-mode=none locations:%s" % (
                     utility,
                     user[0],
                 ))
             else:
-                cmd("%s --add-write-proxy users:user01 --set-auto-schedule=true locations:%s" % (
+                cmd("%s --add-write-proxy users:user01 --set-auto-schedule-mode=automatic locations:%s" % (
                     utility,
                     user[0],
                 ))
         else:
             # Default options for all resources
-            cmd("%s --add-write-proxy users:user01 --add-read-proxy users:user03 --set-auto-schedule=true resources:%s" % (
+            cmd("%s --add-write-proxy users:user01 --add-read-proxy users:user03 --set-auto-schedule-mode=automatic resources:%s" % (
                 utility,
                 user[0],
             ))
@@ -730,9 +728,6 @@ if __name__ == "__main__":
             # Create an appropriate serverinfo.xml file from the template
             buildServerinfo(serverinfo_default, hostname, port, sslport, authtype, docroot)
 
-            # Add large calendars to user account
-            if protocol == "caldav":
-                addLargeCalendars(hostname, docroot)
 
         elif args[0] == "create-users":
             # Read the caldavd.plist file and extract some information we will need.

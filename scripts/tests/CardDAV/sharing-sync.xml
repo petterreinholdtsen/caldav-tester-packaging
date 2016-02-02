@@ -36,7 +36,7 @@
 			<ruri>$notificationpath2:/</ruri>
 		</request>
 	</start>
-	
+
 	<!-- test suite below is similar to test suite in ../CalDAV/sharing-sync.xml -->
 	<test-suite name='shared addressbook'>
 		<test name='1a'>
@@ -175,7 +175,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>POST</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>application/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/POST/sharingreply2.xml</filepath>
 				</data>
@@ -198,7 +198,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -219,7 +219,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -240,7 +240,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -260,7 +260,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -281,7 +281,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -298,7 +298,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-init-level-infinite.xml</filepath>
 				</data>
@@ -321,7 +321,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -338,7 +338,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$sharedaddressbook:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-init-level-1.xml</filepath>
 				</data>
@@ -370,7 +370,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -391,7 +391,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -413,7 +413,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -434,7 +434,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -455,7 +455,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -477,7 +477,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$sharedaddressbook:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -513,7 +513,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -534,7 +534,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -556,7 +556,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -577,7 +577,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -598,7 +598,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -620,7 +620,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$sharedaddressbook:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -652,7 +652,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -673,7 +673,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -698,7 +698,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -719,7 +719,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -740,7 +740,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -765,7 +765,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$sharedaddressbook:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -801,7 +801,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -822,7 +822,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -843,7 +843,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -860,7 +860,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -881,7 +881,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -902,7 +902,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$sharedaddressbook:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -919,6 +919,9 @@
 
 	<!-- test suite below is similar to test suite in ../CalDAV/sharing-sync.xml -->
 	<test-suite name='one shared group'>
+		<require-feature>
+			<feature>shared-addressbook-groups</feature>
+		</require-feature>
 		<test name='0'>
 			<description>clean up old data</description>
 			<request user="$useradmin:" pswd="$pswdadmin:">
@@ -1026,7 +1029,7 @@
 		</test>
 		<test name='2'>
 			<description>user1 POSTs invitation</description>
-			<request print-response="no">
+			<request>
 				<method>POST</method>
 				<ruri>$addressbookpath1:/3.vcf</ruri>
 				<data>
@@ -1079,7 +1082,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -1100,7 +1103,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -1121,7 +1124,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -1141,7 +1144,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -1162,7 +1165,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -1179,7 +1182,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-init-level-infinite.xml</filepath>
 				</data>
@@ -1202,7 +1205,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -1219,7 +1222,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-init-level-1.xml</filepath>
 				</data>
@@ -1255,7 +1258,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -1276,7 +1279,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -1299,7 +1302,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -1321,7 +1324,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -1342,7 +1345,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -1365,7 +1368,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -1402,7 +1405,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -1423,7 +1426,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -1445,7 +1448,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -1466,7 +1469,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -1487,7 +1490,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -1509,7 +1512,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -1545,7 +1548,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -1566,7 +1569,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -1588,7 +1591,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -1609,7 +1612,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -1629,7 +1632,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -1649,7 +1652,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -1684,7 +1687,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -1705,7 +1708,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -1727,7 +1730,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -1748,7 +1751,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -1768,7 +1771,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -1788,7 +1791,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -1819,7 +1822,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -1840,7 +1843,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -1865,7 +1868,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -1886,7 +1889,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -1906,7 +1909,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -1926,7 +1929,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -1957,7 +1960,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -1978,7 +1981,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -2004,7 +2007,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -2029,7 +2032,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -2050,7 +2053,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -2076,7 +2079,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -2116,7 +2119,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -2137,7 +2140,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -2158,7 +2161,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -2175,7 +2178,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -2196,7 +2199,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -2217,7 +2220,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -2231,9 +2234,12 @@
 			</request>
 		</test>
 	</test-suite>
-	
+
 	<!-- test suite below is similar to test suite in ../CalDAV/sharing-sync.xml -->
 	<test-suite name='two shared groups'>
+		<require-feature>
+			<feature>shared-addressbook-groups</feature>
+		</require-feature>
 		<test name='0'>
 			<description>clean up old data</description>
 			<request user="$useradmin:" pswd="$pswdadmin:">
@@ -2399,7 +2405,7 @@
 		</test>
 		<test name='2'>
 			<description>user1 POSTs invitation</description>
-			<request print-response="no">
+			<request>
 				<method>POST</method>
 				<ruri>$addressbookpath1:/6.vcf</ruri>
 				<data>
@@ -2452,7 +2458,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -2473,7 +2479,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -2494,7 +2500,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -2514,7 +2520,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -2535,7 +2541,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -2552,7 +2558,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-init-level-infinite.xml</filepath>
 				</data>
@@ -2577,7 +2583,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-init-level-1.xml</filepath>
 				</data>
@@ -2598,7 +2604,7 @@
 		</test>
 		<test name='6'>
 			<description>user1 POSTs invitation</description>
-			<request print-response="no">
+			<request>
 				<method>POST</method>
 				<ruri>$addressbookpath1:/7.vcf</ruri>
 				<data>
@@ -2651,7 +2657,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -2672,7 +2678,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -2693,7 +2699,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -2713,7 +2719,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -2734,7 +2740,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -2751,7 +2757,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-init-level-infinite.xml</filepath>
 				</data>
@@ -2779,7 +2785,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -2796,7 +2802,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-init-level-1.xml</filepath>
 				</data>
@@ -2838,7 +2844,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -2859,7 +2865,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -2883,7 +2889,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -2906,7 +2912,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -2927,7 +2933,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -2951,7 +2957,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -2989,7 +2995,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -3010,7 +3016,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -3032,7 +3038,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -3053,7 +3059,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -3074,7 +3080,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -3096,7 +3102,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -3128,7 +3134,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -3149,7 +3155,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -3176,7 +3182,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -3202,7 +3208,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -3223,7 +3229,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -3250,7 +3256,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -3291,7 +3297,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -3312,7 +3318,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -3333,7 +3339,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -3350,7 +3356,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -3371,7 +3377,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -3388,7 +3394,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-init-level-infinite.xml</filepath>
 				</data>
@@ -3413,7 +3419,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -3430,7 +3436,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-init-level-1.xml</filepath>
 				</data>
@@ -3468,7 +3474,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token1-level-1.xml</filepath>
 				</data>
@@ -3489,7 +3495,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookhome1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token2-level-infinite.xml</filepath>
 				</data>
@@ -3510,7 +3516,7 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token3-level-1.xml</filepath>
 				</data>
@@ -3527,7 +3533,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token4-level-1.xml</filepath>
 				</data>
@@ -3548,7 +3554,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token5-level-infinite.xml</filepath>
 				</data>
@@ -3569,7 +3575,7 @@
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$addressbookhome2:/$userguid1:/</ruri>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/Common/REPORT/sync-token6-level-1.xml</filepath>
 				</data>
@@ -3584,9 +3590,9 @@
 		</test>
 	</test-suite>
 
-	<!-- test suites below are similar to those in ../CalDAV/sync-report.xml but 
+	<!-- test suites below are similar to those in ../CalDAV/sync-report.xml but
 			use shared address books instead of calendars -->
-	
+
 	<test-suite name='support-report-set/sync-token property'>
 		<test name='0'>
 			<description>clean up old data</description>
@@ -3598,7 +3604,7 @@
 				<ruri>$addressbookhome4:/</ruri>
 				<ruri>$notificationpath1:/</ruri>
 			</request>
-	
+
 			<!-- add 2 vcards to user1 address book -->
 			<request>
 				<method>PUT</method>
@@ -3616,10 +3622,10 @@
 					<filepath>Resource/CardDAV/vreports/put/2.vcf</filepath>
 				</data>
 			</request>
-			
+
 			<!-- share user2 address book with user1 -->
 			<!-- user2 POSTs invitation -->
-			<request user="$userid2:" pswd="$pswd2:" print-response="no">
+			<request user="$userid2:" pswd="$pswd2:">
 				<method>POST</method>
 				<ruri>$addressbookpath2:/</ruri>
 				<data>
@@ -3629,11 +3635,11 @@
 			</request>
 
 			<!-- Check user1 notification collection and get invite uid -->
-			<request print-response="no">
+			<request>
 				<method>WAITCOUNT 1</method>
 				<ruri>$notificationpath1:/</ruri>
 			</request>
-			<request print-response="no">
+			<request>
 				<method>GETNEW</method>
 				<ruri>$notificationpath1:/</ruri>
 				<grabelement>
@@ -3643,7 +3649,7 @@
 			</request>
 
 			<!-- user1 replies ACCEPTED and deletes inviteUID from notification collection -->
-			<request print-response="no">
+			<request>
 				<method>POST</method>
 				<ruri>$addressbookhome1:/</ruri>
 				<data substitutions="yes">
@@ -3803,7 +3809,7 @@
 			<description>On shared addressbook</description>
 			<request>
 				<method>PROPFIND</method>
-				<ruri>$addressbookhome1:/$userid2:/</ruri>
+				<ruri>$addressbookhome1:/$userguid2:/</ruri>
 				<header>
 					<name>Depth</name>
 					<value>0</value>
@@ -3832,7 +3838,7 @@
 		</test>
 		<test name='5'>
 			<description>Look for options header tag on principal</description>
-			<request print-response="no">
+			<request>
 				<method>OPTIONS</method>
 				<ruri>$principal1:</ruri>
 				<verify>
@@ -3845,7 +3851,7 @@
 			</request>
 		</test>
 	</test-suite>
-	
+
 	<test-suite name='simple reports - sync-level'>
 		<test name='1'>
 			<require-feature>
@@ -3868,7 +3874,7 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid2:/</value>
+						<value>$userguid2:/</value>
 					</arg>
 				</verify>
 			</request>
@@ -3894,7 +3900,7 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid2:/</value>
+						<value>$userguid2:/</value>
 					</arg>
 				</verify>
 			</request>
@@ -3920,7 +3926,7 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid2:/</value>
+						<value>$userguid2:/</value>
 					</arg>
 				</verify>
 			</request>
@@ -3948,10 +3954,10 @@
 						<value>$addressbook:/</value>
 						<value>$addressbook:/1.vcf</value>
 						<value>$addressbook:/2.vcf</value>
-						<value>$userid2:/</value>
-						<value>$userid2:/1.vcf</value>
-						<value>$userid2:/2.vcf</value>
-						<value>$userid2:/addressbook.vcf</value>
+						<value>$userguid2:/</value>
+						<value>$userguid2:/1.vcf</value>
+						<value>$userguid2:/2.vcf</value>
+						<value>$userguid2:/addressbook.vcf</value>
 					</arg>
 				</verify>
 			</request>
@@ -3979,10 +3985,10 @@
 						<value>$addressbook:/</value>
 						<value>$addressbook:/1.vcf</value>
 						<value>$addressbook:/2.vcf</value>
-						<value>$userid2:/</value>
-						<value>$userid2:/1.vcf</value>
-						<value>$userid2:/2.vcf</value>
-						<value>$userid2:/addressbook.vcf</value>
+						<value>$userguid2:/</value>
+						<value>$userguid2:/1.vcf</value>
+						<value>$userguid2:/2.vcf</value>
+						<value>$userguid2:/addressbook.vcf</value>
 					</arg>
 				</verify>
 			</request>
@@ -4010,10 +4016,10 @@
 						<value>$addressbook:/</value>
 						<value>$addressbook:/1.vcf</value>
 						<value>$addressbook:/2.vcf</value>
-						<value>$userid2:/</value>
-						<value>$userid2:/1.vcf</value>
-						<value>$userid2:/2.vcf</value>
-						<value>$userid2:/addressbook.vcf</value>
+						<value>$userguid2:/</value>
+						<value>$userguid2:/1.vcf</value>
+						<value>$userguid2:/2.vcf</value>
+						<value>$userguid2:/addressbook.vcf</value>
 					</arg>
 				</verify>
 			</request>
@@ -4240,7 +4246,7 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid2:/</value>
+						<value>$userguid2:/</value>
 					</arg>
 				</verify>
 			</request>
@@ -4268,10 +4274,10 @@
 						<value>$addressbook:/</value>
 						<value>$addressbook:/1.vcf</value>
 						<value>$addressbook:/2.vcf</value>
-						<value>$userid2:/</value>
-						<value>$userid2:/1.vcf</value>
-						<value>$userid2:/2.vcf</value>
-						<value>$userid2:/addressbook.vcf</value>
+						<value>$userguid2:/</value>
+						<value>$userguid2:/1.vcf</value>
+						<value>$userguid2:/2.vcf</value>
+						<value>$userguid2:/addressbook.vcf</value>
 					</arg>
 				</verify>
 			</request>
@@ -4335,7 +4341,7 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid2:/</value>
+						<value>$userguid2:/</value>
 					</arg>
 				</verify>
 			</request>
@@ -4364,10 +4370,10 @@
 						<value>$addressbook:/1.vcf</value>
 						<value>$addressbook:/2.vcf</value>
 						<value>$addressbook:/3.vcf</value>
-						<value>$userid2:/</value>
-						<value>$userid2:/1.vcf</value>
-						<value>$userid2:/2.vcf</value>
-						<value>$userid2:/addressbook.vcf</value>
+						<value>$userguid2:/</value>
+						<value>$userguid2:/1.vcf</value>
+						<value>$userguid2:/2.vcf</value>
+						<value>$userguid2:/addressbook.vcf</value>
 					</arg>
 				</verify>
 			</request>
@@ -4426,7 +4432,7 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid2:/</value>
+						<value>$userguid2:/</value>
 					</arg>
 				</verify>
 			</request>
@@ -4454,10 +4460,10 @@
 						<value>$addressbook:/</value>
 						<value>$addressbook:/1.vcf</value>
 						<value>$addressbook:/2.vcf</value>
-						<value>$userid2:/</value>
-						<value>$userid2:/1.vcf</value>
-						<value>$userid2:/2.vcf</value>
-						<value>$userid2:/addressbook.vcf</value>
+						<value>$userguid2:/</value>
+						<value>$userguid2:/1.vcf</value>
+						<value>$userguid2:/2.vcf</value>
+						<value>$userguid2:/addressbook.vcf</value>
 					</arg>
 				</verify>
 			</request>
@@ -4520,7 +4526,7 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid2:/</value>
+						<value>$userguid2:/</value>
 					</arg>
 				</verify>
 			</request>
@@ -4548,10 +4554,10 @@
 						<value>$addressbook:/</value>
 						<value>$addressbook:/1.vcf</value>
 						<value>$addressbook:/2.vcf</value>
-						<value>$userid2:/</value>
-						<value>$userid2:/1.vcf</value>
-						<value>$userid2:/2.vcf</value>
-						<value>$userid2:/addressbook.vcf</value>
+						<value>$userguid2:/</value>
+						<value>$userguid2:/1.vcf</value>
+						<value>$userguid2:/2.vcf</value>
+						<value>$userguid2:/addressbook.vcf</value>
 					</arg>
 				</verify>
 			</request>
@@ -4606,7 +4612,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/23.xml</filepath>
 				</data>
@@ -4639,7 +4645,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/23.xml</filepath>
 				</data>
@@ -4661,7 +4667,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/24.xml</filepath>
 				</data>
@@ -4724,7 +4730,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/23.xml</filepath>
 				</data>
@@ -4952,7 +4958,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/26.xml</filepath>
 				</data>
@@ -4993,7 +4999,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/26.xml</filepath>
 				</data>
@@ -5015,7 +5021,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/27.xml</filepath>
 				</data>
@@ -5089,7 +5095,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/26.xml</filepath>
 				</data>
@@ -5143,7 +5149,7 @@
 
 			<!-- share user3 address book with user1 -->
 			<!-- user3 POSTs invitation -->
-			<request user="$userid3:" pswd="$pswd3:" print-response="no">
+			<request user="$userid3:" pswd="$pswd3:">
 				<method>POST</method>
 				<ruri>$addressbookpath3:/</ruri>
 				<data>
@@ -5153,11 +5159,11 @@
 			</request>
 
 			<!-- Check user1 notification collection and get invite uid -->
-			<request print-response="no">
+			<request>
 				<method>WAITCOUNT 1</method>
 				<ruri>$notificationpath1:/</ruri>
 			</request>
-			<request print-response="no">
+			<request>
 				<method>GETNEW</method>
 				<ruri>$notificationpath1:/</ruri>
 				<grabelement>
@@ -5167,7 +5173,7 @@
 			</request>
 
 			<!-- user1 replies ACCEPTED and deletes inviteUID from notification collection -->
-			<request print-response="no">
+			<request>
 				<method>POST</method>
 				<ruri>$addressbookhome1:/</ruri>
 				<data substitutions="yes">
@@ -5197,10 +5203,10 @@
 					<filepath>Resource/CardDAV/vreports/put/6.vcf</filepath>
 				</data>
 			</request>
-	
+
 			<!-- share user4 address book with user1 -->
 			<!-- user4 POSTs invitation -->
-			<request user="$userid4:" pswd="$pswd4:" print-response="no">
+			<request user="$userid4:" pswd="$pswd4:">
 				<method>POST</method>
 				<ruri>$addressbookpath4:/</ruri>
 				<data>
@@ -5210,11 +5216,11 @@
 			</request>
 
 			<!-- Check user1 notification collection and get invite uid -->
-			<request print-response="no">
+			<request>
 				<method>WAITCOUNT 1</method>
 				<ruri>$notificationpath1:/</ruri>
 			</request>
-			<request print-response="no">
+			<request>
 				<method>GETNEW</method>
 				<ruri>$notificationpath1:/</ruri>
 				<grabelement>
@@ -5224,7 +5230,7 @@
 			</request>
 
 			<!-- user1 replies ACCEPTED and deletes inviteUID from notification collection -->
-			<request print-response="no">
+			<request>
 				<method>POST</method>
 				<ruri>$addressbookhome1:/</ruri>
 				<data substitutions="yes">
@@ -5273,14 +5279,14 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid3:/</value>
-						<value>$userid3:/1.vcf</value>
-						<value>$userid3:/2.vcf</value>
-						<value>$userid3:/addressbook.vcf</value>
-						<value>$userid4:/</value>
-						<value>$userid4:/1.vcf</value>
-						<value>$userid4:/2.vcf</value>
-						<value>$userid4:/addressbook.vcf</value>
+						<value>$userguid3:/</value>
+						<value>$userguid3:/1.vcf</value>
+						<value>$userguid3:/2.vcf</value>
+						<value>$userguid3:/addressbook.vcf</value>
+						<value>$userguid4:/</value>
+						<value>$userguid4:/1.vcf</value>
+						<value>$userguid4:/2.vcf</value>
+						<value>$userguid4:/addressbook.vcf</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -5293,7 +5299,7 @@
 			<description>new resource</description>
 			<request>
 				<method>PUT</method>
-				<ruri>$addressbookhome1:/$userid3:/3.vcf</ruri>
+				<ruri>$addressbookhome1:/$userguid3:/3.vcf</ruri>
 				<data>
 					<content-type>text/vcard; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/vreports/put/9.vcf</filepath>
@@ -5309,7 +5315,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/23.xml</filepath>
 				</data>
@@ -5317,8 +5323,8 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
-						<value>$userid3:/3.vcf</value>
+						<value>$userguid3:/</value>
+						<value>$userguid3:/3.vcf</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -5331,7 +5337,7 @@
 			<description>remove resource (treated as new)</description>
 			<request>
 				<method>DELETE</method>
-				<ruri>$addressbookhome1:/$userid3:/3.vcf</ruri>
+				<ruri>$addressbookhome1:/$userguid3:/3.vcf</ruri>
 				<verify>
 					<callback>statusCode</callback>
 				</verify>
@@ -5343,7 +5349,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/23.xml</filepath>
 				</data>
@@ -5351,11 +5357,11 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 					<arg>
 						<name>badhrefs</name>
-						<value>$userid3:/3.vcf</value>
+						<value>$userguid3:/3.vcf</value>
 					</arg>
 				</verify>
 			</request>
@@ -5369,7 +5375,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/24.xml</filepath>
 				</data>
@@ -5377,11 +5383,11 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 					<arg>
 						<name>badhrefs</name>
-						<value>$userid3:/3.vcf</value>
+						<value>$userguid3:/3.vcf</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -5394,7 +5400,7 @@
 			<description>changed resource</description>
 			<request>
 				<method>PUT</method>
-				<ruri>$addressbookhome1:/$userid3:/1.vcf</ruri>
+				<ruri>$addressbookhome1:/$userguid3:/1.vcf</ruri>
 				<data>
 					<content-type>text/vcard; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/vreports/put/5.vcf</filepath>
@@ -5418,8 +5424,8 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
-						<value>$userid3:/1.vcf</value>
+						<value>$userguid3:/</value>
+						<value>$userguid3:/1.vcf</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -5437,7 +5443,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/23.xml</filepath>
 				</data>
@@ -5474,14 +5480,14 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid3:/</value>
-						<value>$userid3:/1.vcf</value>
-						<value>$userid3:/2.vcf</value>
-						<value>$userid3:/addressbook.vcf</value>
-						<value>$userid4:/</value>
-						<value>$userid4:/1.vcf</value>
-						<value>$userid4:/2.vcf</value>
-						<value>$userid4:/addressbook.vcf</value>
+						<value>$userguid3:/</value>
+						<value>$userguid3:/1.vcf</value>
+						<value>$userguid3:/2.vcf</value>
+						<value>$userguid3:/addressbook.vcf</value>
+						<value>$userguid4:/</value>
+						<value>$userguid4:/1.vcf</value>
+						<value>$userguid4:/2.vcf</value>
+						<value>$userguid4:/addressbook.vcf</value>
 					</arg>
 				</verify>
 				<verify>
@@ -5502,7 +5508,7 @@
 			<description>new resource</description>
 			<request>
 				<method>PUT</method>
-				<ruri>$addressbookhome1:/$userid4:/3.vcf</ruri>
+				<ruri>$addressbookhome1:/$userguid4:/3.vcf</ruri>
 				<data>
 					<content-type>text/vcard; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/vreports/put/12.vcf</filepath>
@@ -5518,7 +5524,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/26.xml</filepath>
 				</data>
@@ -5526,8 +5532,8 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid4:/</value>
-						<value>$userid4:/3.vcf</value>
+						<value>$userguid4:/</value>
+						<value>$userguid4:/3.vcf</value>
 					</arg>
 				</verify>
 				<verify>
@@ -5548,7 +5554,7 @@
 			<description>remove resource (treated as new)</description>
 			<request>
 				<method>DELETE</method>
-				<ruri>$addressbookhome1:/$userid4:/3.vcf</ruri>
+				<ruri>$addressbookhome1:/$userguid4:/3.vcf</ruri>
 				<verify>
 					<callback>statusCode</callback>
 				</verify>
@@ -5560,7 +5566,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/26.xml</filepath>
 				</data>
@@ -5568,11 +5574,11 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid4:/</value>
+						<value>$userguid4:/</value>
 					</arg>
 					<arg>
 						<name>badhrefs</name>
-						<value>$userid4:/3.vcf</value>
+						<value>$userguid4:/3.vcf</value>
 					</arg>
 				</verify>
 			</request>
@@ -5586,7 +5592,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/27.xml</filepath>
 				</data>
@@ -5594,11 +5600,11 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid4:/</value>
+						<value>$userguid4:/</value>
 					</arg>
 					<arg>
 						<name>badhrefs</name>
-						<value>$userid4:/3.vcf</value>
+						<value>$userguid4:/3.vcf</value>
 					</arg>
 				</verify>
 				<verify>
@@ -5618,7 +5624,7 @@
 			<description>changed resource</description>
 			<request>
 				<method>PUT</method>
-				<ruri>$addressbookhome1:/$userid4:/1.vcf</ruri>
+				<ruri>$addressbookhome1:/$userguid4:/1.vcf</ruri>
 				<data>
 					<content-type>text/vcard; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/vreports/put/7.vcf</filepath>
@@ -5642,8 +5648,8 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid4:/</value>
-						<value>$userid4:/1.vcf</value>
+						<value>$userguid4:/</value>
+						<value>$userguid4:/1.vcf</value>
 					</arg>
 				</verify>
 				<verify>
@@ -5669,7 +5675,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/26.xml</filepath>
 				</data>
@@ -5714,12 +5720,12 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid3:/</value>
-						<value>$userid3:/1.vcf</value>
-						<value>$userid3:/2.vcf</value>
-						<value>$userid4:/</value>
-						<value>$userid4:/1.vcf</value>
-						<value>$userid4:/2.vcf</value>
+						<value>$userguid3:/</value>
+						<value>$userguid3:/1.vcf</value>
+						<value>$userguid3:/2.vcf</value>
+						<value>$userguid4:/</value>
+						<value>$userguid4:/1.vcf</value>
+						<value>$userguid4:/2.vcf</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -5765,7 +5771,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/23.xml</filepath>
 				</data>
@@ -5773,7 +5779,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>badhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -5786,7 +5792,7 @@
 			<description>add addressbook - test last sync</description>
 			<!-- share user3 address book with user1 -->
 			<!-- user3 POSTs invitation -->
-			<request user="$userid3:" pswd="$pswd3:" print-response="no">
+			<request user="$userid3:" pswd="$pswd3:">
 				<method>POST</method>
 				<ruri>$addressbookpath3:/</ruri>
 				<data>
@@ -5796,11 +5802,11 @@
 			</request>
 
 			<!-- Check user1 notification collection and get invite uid -->
-			<request print-response="no">
+			<request>
 				<method>WAITCOUNT 1</method>
 				<ruri>$notificationpath1:/</ruri>
 			</request>
-			<request print-response="no">
+			<request>
 				<method>GETNEW</method>
 				<ruri>$notificationpath1:/</ruri>
 				<grabelement>
@@ -5810,7 +5816,7 @@
 			</request>
 
 			<!-- user1 replies ACCEPTED and deletes inviteUID from notification collection -->
-			<request print-response="no">
+			<request>
 				<method>POST</method>
 				<ruri>$addressbookhome1:/</ruri>
 				<data substitutions="yes">
@@ -5837,7 +5843,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 				</verify>
 			</request>
@@ -5859,7 +5865,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -5869,7 +5875,7 @@
 			</request>
 		</test>
 	</test-suite>
-	
+
 	<test-suite name='simple reports - diff token - no props - home depth:1'>
 		<require-feature>
 			<feature>sync-report-home</feature>
@@ -5887,7 +5893,7 @@
 
 			<!-- share user3 address book with user1 -->
 			<!-- user3 POSTs invitation -->
-			<request user="$userid3:" pswd="$pswd3:" print-response="no">
+			<request user="$userid3:" pswd="$pswd3:">
 				<method>POST</method>
 				<ruri>$addressbookpath3:/</ruri>
 				<data>
@@ -5897,11 +5903,11 @@
 			</request>
 
 			<!-- Check user1 notification collection and get invite uid -->
-			<request print-response="no">
+			<request>
 				<method>WAITCOUNT 1</method>
 				<ruri>$notificationpath1:/</ruri>
 			</request>
-			<request print-response="no">
+			<request>
 				<method>GETNEW</method>
 				<ruri>$notificationpath1:/</ruri>
 				<grabelement>
@@ -5911,7 +5917,7 @@
 			</request>
 
 			<!-- user1 replies ACCEPTED and deletes inviteUID from notification collection -->
-			<request print-response="no">
+			<request>
 				<method>POST</method>
 				<ruri>$addressbookhome1:/</ruri>
 				<data substitutions="yes">
@@ -5941,10 +5947,10 @@
 					<filepath>Resource/CardDAV/vreports/put/6.vcf</filepath>
 				</data>
 			</request>
-	
+
 			<!-- share user4 address book with user1 -->
 			<!-- user4 POSTs invitation -->
-			<request user="$userid4:" pswd="$pswd4:" print-response="no">
+			<request user="$userid4:" pswd="$pswd4:">
 				<method>POST</method>
 				<ruri>$addressbookpath4:/</ruri>
 				<data>
@@ -5954,11 +5960,11 @@
 			</request>
 
 			<!-- Check user1 notification collection and get invite uid -->
-			<request print-response="no">
+			<request>
 				<method>WAITCOUNT 1</method>
 				<ruri>$notificationpath1:/</ruri>
 			</request>
-			<request print-response="no">
+			<request>
 				<method>GETNEW</method>
 				<ruri>$notificationpath1:/</ruri>
 				<grabelement>
@@ -5968,7 +5974,7 @@
 			</request>
 
 			<!-- user1 replies ACCEPTED and deletes inviteUID from notification collection -->
-			<request print-response="no">
+			<request>
 				<method>POST</method>
 				<ruri>$addressbookhome1:/</ruri>
 				<data substitutions="yes">
@@ -6017,8 +6023,8 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid3:/</value>
-						<value>$userid4:/</value>
+						<value>$userguid3:/</value>
+						<value>$userguid4:/</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -6031,7 +6037,7 @@
 			<description>new resource</description>
 			<request>
 				<method>PUT</method>
-				<ruri>$addressbookhome1:/$userid3:/3.vcf</ruri>
+				<ruri>$addressbookhome1:/$userguid3:/3.vcf</ruri>
 				<data>
 					<content-type>text/vcard; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/vreports/put/9.vcf</filepath>
@@ -6047,7 +6053,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/32.xml</filepath>
 				</data>
@@ -6055,7 +6061,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -6068,7 +6074,7 @@
 			<description>remove resource (treated as new)</description>
 			<request>
 				<method>DELETE</method>
-				<ruri>$addressbookhome1:/$userid3:/3.vcf</ruri>
+				<ruri>$addressbookhome1:/$userguid3:/3.vcf</ruri>
 				<verify>
 					<callback>statusCode</callback>
 				</verify>
@@ -6080,7 +6086,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/32.xml</filepath>
 				</data>
@@ -6088,7 +6094,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 				</verify>
 			</request>
@@ -6102,7 +6108,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/33.xml</filepath>
 				</data>
@@ -6110,7 +6116,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -6123,7 +6129,7 @@
 			<description>changed resource</description>
 			<request>
 				<method>PUT</method>
-				<ruri>$addressbookhome1:/$userid3:/1.vcf</ruri>
+				<ruri>$addressbookhome1:/$userguid3:/1.vcf</ruri>
 				<data>
 					<content-type>text/vcard; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/vreports/put/5.vcf</filepath>
@@ -6147,7 +6153,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -6165,7 +6171,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/32.xml</filepath>
 				</data>
@@ -6202,8 +6208,8 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid3:/</value>
-						<value>$userid4:/</value>
+						<value>$userguid3:/</value>
+						<value>$userguid4:/</value>
 					</arg>
 				</verify>
 				<verify>
@@ -6224,7 +6230,7 @@
 			<description>new resource</description>
 			<request>
 				<method>PUT</method>
-				<ruri>$addressbookhome1:/$userid4:/3.vcf</ruri>
+				<ruri>$addressbookhome1:/$userguid4:/3.vcf</ruri>
 				<data>
 					<content-type>text/vcard; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/vreports/put/10.vcf</filepath>
@@ -6240,7 +6246,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/35.xml</filepath>
 				</data>
@@ -6248,7 +6254,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid4:/</value>
+						<value>$userguid4:/</value>
 					</arg>
 				</verify>
 				<verify>
@@ -6269,7 +6275,7 @@
 			<description>remove resource (treated as new)</description>
 			<request>
 				<method>DELETE</method>
-				<ruri>$addressbookhome1:/$userid4:/3.vcf</ruri>
+				<ruri>$addressbookhome1:/$userguid4:/3.vcf</ruri>
 				<verify>
 					<callback>statusCode</callback>
 				</verify>
@@ -6281,7 +6287,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/35.xml</filepath>
 				</data>
@@ -6289,7 +6295,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid4:/</value>
+						<value>$userguid4:/</value>
 					</arg>
 				</verify>
 			</request>
@@ -6303,7 +6309,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/36.xml</filepath>
 				</data>
@@ -6311,7 +6317,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid4:/</value>
+						<value>$userguid4:/</value>
 					</arg>
 				</verify>
 				<verify>
@@ -6331,7 +6337,7 @@
 			<description>changed resource</description>
 			<request>
 				<method>PUT</method>
-				<ruri>$addressbookhome1:/$userid4:/1.vcf</ruri>
+				<ruri>$addressbookhome1:/$userguid4:/1.vcf</ruri>
 				<data>
 					<content-type>text/vcard; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/vreports/put/7.vcf</filepath>
@@ -6355,7 +6361,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid4:/</value>
+						<value>$userguid4:/</value>
 					</arg>
 				</verify>
 				<verify>
@@ -6381,7 +6387,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/35.xml</filepath>
 				</data>
@@ -6426,8 +6432,8 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid3:/</value>
-						<value>$userid4:/</value>
+						<value>$userguid3:/</value>
+						<value>$userguid4:/</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -6440,21 +6446,21 @@
 			<description>remove resource then addressbook</description>
 			<request>
 				<method>DELETE</method>
-				<ruri>$addressbookhome1:/$userid3:/1.vcf</ruri>
+				<ruri>$addressbookhome1:/$userguid3:/1.vcf</ruri>
 				<verify>
 					<callback>statusCode</callback>
 				</verify>
 			</request>
 			<request>
 				<method>DELETE</method>
-				<ruri>$addressbookhome1:/$userid3:/2.vcf</ruri>
+				<ruri>$addressbookhome1:/$userguid3:/2.vcf</ruri>
 				<verify>
 					<callback>statusCode</callback>
 				</verify>
 			</request>
 			<request>
 				<method>DELETE</method>
-				<ruri>$addressbookhome1:/$userid3:/</ruri>
+				<ruri>$addressbookhome1:/$userguid3:/</ruri>
 				<verify>
 					<callback>statusCode</callback>
 				</verify>
@@ -6466,7 +6472,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/32.xml</filepath>
 				</data>
@@ -6474,7 +6480,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>badhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -6487,7 +6493,7 @@
 			<description>add addressbook - test last sync</description>
 			<!-- share user3 address book with user1 -->
 			<!-- user3 POSTs invitation -->
-			<request user="$userid3:" pswd="$pswd3:" print-response="no">
+			<request user="$userid3:" pswd="$pswd3:">
 				<method>POST</method>
 				<ruri>$addressbookpath3:/</ruri>
 				<data>
@@ -6497,11 +6503,11 @@
 			</request>
 
 			<!-- Check user1 notification collection and get invite uid -->
-			<request print-response="no">
+			<request>
 				<method>WAITCOUNT 1</method>
 				<ruri>$notificationpath1:/</ruri>
 			</request>
-			<request print-response="no">
+			<request>
 				<method>GETNEW</method>
 				<ruri>$notificationpath1:/</ruri>
 				<grabelement>
@@ -6511,7 +6517,7 @@
 			</request>
 
 			<!-- user1 replies ACCEPTED and deletes inviteUID from notification collection -->
-			<request print-response="no">
+			<request>
 				<method>POST</method>
 				<ruri>$addressbookhome1:/</ruri>
 				<data substitutions="yes">
@@ -6532,7 +6538,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/33.xml</filepath>
 				</data>
@@ -6540,7 +6546,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 				</verify>
 			</request>
@@ -6554,7 +6560,7 @@
 					<name>Depth</name>
 					<value>1</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/32.xml</filepath>
 				</data>
@@ -6562,7 +6568,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 				</verify>
 			</request>
@@ -6616,12 +6622,12 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid3:/</value>
-						<value>$userid3:/addressbook.vcf</value>
-						<value>$userid4:/</value>
-						<value>$userid4:/1.vcf</value>
-						<value>$userid4:/2.vcf</value>
-						<value>$userid4:/addressbook.vcf</value>
+						<value>$userguid3:/</value>
+						<value>$userguid3:/addressbook.vcf</value>
+						<value>$userguid4:/</value>
+						<value>$userguid4:/1.vcf</value>
+						<value>$userguid4:/2.vcf</value>
+						<value>$userguid4:/addressbook.vcf</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -6634,7 +6640,7 @@
 			<description>Change a property</description>
 			<request>
 				<method>PROPPATCH</method>
-				<ruri>$addressbookhome1:/$userid3:/</ruri>
+				<ruri>$addressbookhome1:/$userguid3:/</ruri>
 				<data>
 					<content-type>text/vcard; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/37.xml</filepath>
@@ -6650,7 +6656,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/23.xml</filepath>
 				</data>
@@ -6658,7 +6664,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 				</verify>
 				<verify>
@@ -6678,7 +6684,7 @@
 			<description>Remove a property</description>
 			<request>
 				<method>PROPPATCH</method>
-				<ruri>$addressbookhome1:/$userid3:/</ruri>
+				<ruri>$addressbookhome1:/$userguid3:/</ruri>
 				<data>
 					<content-type>text/vcard; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/38.xml</filepath>
@@ -6694,7 +6700,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/23.xml</filepath>
 				</data>
@@ -6702,7 +6708,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 				</verify>
 				<verify>
@@ -6742,8 +6748,8 @@
 					<arg>
 						<name>okhrefs</name>
 						<value>$addressbook:/</value>
-						<value>$userid3:/</value>
-						<value>$userid4:/</value>
+						<value>$userguid3:/</value>
+						<value>$userguid4:/</value>
 					</arg>
 				</verify>
 				<grabelement>
@@ -6756,7 +6762,7 @@
 			<description>Change a property</description>
 			<request>
 				<method>PROPPATCH</method>
-				<ruri>$addressbookhome1:/$userid3:/</ruri>
+				<ruri>$addressbookhome1:/$userguid3:/</ruri>
 				<data>
 					<content-type>text/vcard; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/37.xml</filepath>
@@ -6772,7 +6778,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/32.xml</filepath>
 				</data>
@@ -6780,7 +6786,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 				</verify>
 				<verify>
@@ -6800,7 +6806,7 @@
 			<description>Remove a property</description>
 			<request>
 				<method>PROPPATCH</method>
-				<ruri>$addressbookhome1:/$userid3:/</ruri>
+				<ruri>$addressbookhome1:/$userguid3:/</ruri>
 				<data>
 					<content-type>text/vcard; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/38.xml</filepath>
@@ -6816,7 +6822,7 @@
 					<name>Depth</name>
 					<value>infinity</value>
 				</header>
-				<data substitutions='yes'>
+				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/sharing/sync/addressbook/32.xml</filepath>
 				</data>
@@ -6824,7 +6830,7 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
-						<value>$userid3:/</value>
+						<value>$userguid3:/</value>
 					</arg>
 				</verify>
 				<verify>
@@ -6855,5 +6861,5 @@
 			<ruri>$notificationpath4:/</ruri>
 		</request>
 	</end>
-	
+
 </caldavtest>

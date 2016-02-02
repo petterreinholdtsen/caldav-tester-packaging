@@ -18,14 +18,11 @@
 
 from __future__ import print_function
 
-from itertools import chain
-from os import listdir, environ as environment
 from os.path import dirname, abspath, join as joinpath
-import errno
-import subprocess
-
-from pip.req import parse_requirements
 from setuptools import setup, find_packages as setuptools_find_packages
+import errno
+import os
+import subprocess
 
 
 #
@@ -34,7 +31,15 @@ from setuptools import setup, find_packages as setuptools_find_packages
 def find_packages():
     modules = []
 
-    return modules + setuptools_find_packages()
+    for pkg in filter(
+        lambda p: os.path.isdir(p) and os.path.isfile(os.path.join(p, "__init__.py")),
+        os.listdir(".")
+    ):
+        modules.extend([pkg, ] + [
+            "{}.{}".format(pkg, subpkg)
+            for subpkg in setuptools_find_packages(pkg)
+        ])
+    return modules
 
 
 
@@ -47,7 +52,7 @@ def version():
 
     branches = tuple(
         branch.format(
-            project="twext",
+            project="CalDAVTester",
             version=base_version,
         )
         for branch in (
@@ -88,6 +93,7 @@ def version():
 
         break
     else:
+        full_version = base_version
         full_version += "a.unknown"
         full_version += "-r{revision}".format(revision=svn_revision)
 
@@ -97,6 +103,8 @@ def version():
 #
 # Options
 #
+
+name = "CalDAVTester"
 
 description = "CalDAV/CardDAV protocol test suite"
 
@@ -114,38 +122,24 @@ classifiers = [
     "Topic :: Software Development :: Testing",
 ]
 
+author = "Apple Inc."
+
+author_email = "calendarserver-dev@lists.macosforge.org"
+
+license = "Apache License, Version 2.0"
+
+platforms = ["all"]
+
 
 #
 # Dependencies
 #
 
-requirements_dir = joinpath(dirname(__file__), "requirements")
-
-
-def read_requirements(reqs_filename):
-    return [
-        str(r.req) for r in
-        parse_requirements(joinpath(requirements_dir, reqs_filename))
-    ]
-
-
 setup_requirements = []
 
-install_requirements = read_requirements("py_base.txt")
+install_requirements = []
 
-extras_requirements = dict(
-    (reqs_filename[4:-4], read_requirements(reqs_filename))
-    for reqs_filename in listdir(requirements_dir)
-    if reqs_filename.startswith("py_opt_") and reqs_filename.endswith(".txt")
-)
-
-# Requirements for development and testing
-develop_requirements = read_requirements("py_develop.txt")
-
-if environment.get("_DEVELOP", "false") == "true":
-    install_requirements.extend(develop_requirements)
-    install_requirements.extend(chain(*extras_requirements.values()))
-
+extras_requirements = {}
 
 
 #
@@ -166,16 +160,16 @@ def doSetup():
     version_string = version()
 
     setup(
-        name="CalDAVTester",
+        name=name,
         version=version_string,
         description=description,
         long_description=long_description,
         url=url,
         classifiers=classifiers,
-        author="Apple Inc.",
-        author_email="calendarserver-dev@lists.macosforge.org",
-        license="Apache License, Version 2.0",
-        platforms=["all"],
+        author=author,
+        author_email=author_email,
+        license=license,
+        platforms=platforms,
         packages=find_packages(),
         package_data={},
         scripts=[],

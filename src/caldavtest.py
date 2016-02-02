@@ -100,6 +100,9 @@ class caldavtest(object):
             self.manager.testFile(self.name, "Excluded features: %s" % (", ".join(sorted(self.excludedFeatures()),)), manager.RESULT_IGNORED)
             return 0, 0, 1
 
+        # Always need a new set of UIDs for the entire test
+        self.manager.server_info.newUIDs()
+
         self.only = any([suite.only for suite in self.suites])
         try:
             result = self.dorequests("Start Requests...", self.start_requests, False, True, label="%s | %s" % (self.name, "START_REQUESTS"))
@@ -154,6 +157,7 @@ class caldavtest(object):
             etags = {}
             only_tests = any([test.only for test in suite.tests])
             testsuite = self.manager.testSuite(testfile, result_name, "")
+            suite.aboutToRun()
             for test in suite.tests:
                 result = self.run_test(testsuite, test, etags, only_tests, label="%s | %s" % (label, test.name))
                 if result == "t":
@@ -297,6 +301,7 @@ class caldavtest(object):
 
     def dofindnew(self, collection, label=""):
         hresult = ""
+        possible_matches = set()
         req = request(self.manager)
         req.method = "PROPFIND"
         req.ruris.append(collection[0])
@@ -323,7 +328,6 @@ class caldavtest(object):
             except Exception:
                 return hresult
 
-            possible_matches = set()
             latest = 0
             request_uri = req.getURI(self.manager.server_info)
             for response in tree.findall("{DAV:}response"):
@@ -410,13 +414,13 @@ class caldavtest(object):
                     ctr += 1
 
                 if ctr - 1 == count:
-                    return True
+                    return None
             delay = self.manager.server_info.waitdelay
             starttime = time.time()
             while (time.time() < starttime + delay):
                 pass
         else:
-            return False
+            return ctr - 1
 
 
     def dowaitchanged(self, uri, etag, user, pswd, label=""):
@@ -521,8 +525,9 @@ class caldavtest(object):
             count = int(req.method[10:])
             for ruri in req.ruris:
                 collection = (ruri, req.user, req.pswd)
-                if not self.dowaitcount(collection, count, label=label):
-                    return False, "Count did not change", None, None
+                waitcount = self.dowaitcount(collection, count, label=label)
+                if waitcount is not None:
+                    return False, "Count did not change: {}".format(waitcount), None, None
             else:
                 return True, "", None, None
 
@@ -531,11 +536,12 @@ class caldavtest(object):
             count = int(req.method[len("WAITDELETEALL"):])
             for ruri in req.ruris:
                 collection = (ruri, req.user, req.pswd)
-                if self.dowaitcount(collection, count, label=label):
+                waitcount = self.dowaitcount(collection, count, label=label)
+                if waitcount is None:
                     hrefs = self.dofindall(collection, label="%s | %s" % (label, "DELETEALL"))
                     self.dodeleteall(hrefs, label="%s | %s" % (label, "DELETEALL"))
                 else:
-                    return False, "Count did not change", None, None
+                    return False, "Count did not change: {}".format(waitcount), None, None
             else:
                 return True, "", None, None
 
@@ -560,8 +566,10 @@ class caldavtest(object):
 
         # Special for GETCHANGED
         if req.method == "GETCHANGED":
-            if not self.dowaitchanged(uri, etags[uri], req.user, req.pswd,
-                label=label):
+            if not self.dowaitchanged(
+                uri, etags[uri], req.user, req.pswd,
+                label=label
+            ):
                 return False, "Resource did not change", None, None
             method = "GET"
 
@@ -572,7 +580,7 @@ class caldavtest(object):
         # Do the http request
         http = SmartHTTPConnection(req.host, req.port, self.manager.server_info.ssl)
 
-        if not 'User-Agent' in headers and label is not None:
+        if 'User-Agent' not in headers and label is not None:
             headers['User-Agent'] = label.encode("utf-8")
 
         try:

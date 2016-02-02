@@ -28,22 +28,24 @@
 	<sslport2>8543</sslport2>
 
 	<authtype>basic</authtype>
-	
+
 	<waitcount>120</waitcount>
 	<waitdelay>0.25</waitdelay>
+	<waitsuccess>30</waitsuccess>
 
 	<features>
 		<!--  Generic WebDAV extensions -->
 		<feature>COPY Method</feature>							<!-- COPY method -->
 		<feature>MOVE Method</feature>							<!-- MOVE method -->
 		<feature>Extended MKCOL</feature>						<!-- Extended MKCOL -->
-		
+
 		<!-- ACL related -->
 		<feature>ACL Method</feature>							<!-- ACL method -->
 		<feature>acl-principal-prop-set REPORT</feature>		<!-- ACL acl-principal-prop-set REPORT -->
 		<feature>principal-match REPORT</feature>				<!-- ACL principal-match REPORT -->
 		<feature>principal-property-search REPORT</feature>		<!-- ACL principal-property-search REPORT -->
 		<feature>principal-search-property-set REPORT</feature>	<!-- ACL principal-search-property-set REPORT -->
+		<feature>calendarserver-principal-search REPORT</feature>	<!-- ACL calendarserver-principal-search REPORT -->
 
 		<feature>add-member</feature>					<!-- Add-member used to create resources -->
 		<!-- <feature>auth-on-root</feature> -->		<!-- Whether the server requires authentication on the root URI -->
@@ -82,6 +84,7 @@
 		<feature>default-alarms</feature>				<!-- default alarms extension -->
 		<feature>EMAIL parameter</feature>				<!-- Server normalizes cuaddress and adds EMAIL parameter -->
 		<feature>extended-freebusy</feature>	      	<!-- Extended freebusy response -->
+		<feature>group-attendee-expansion</feature>	    <!-- Auto-expansion of group attendees -->
 		<feature>implicit-scheduling</feature>			<!-- CalDAV scheduling - implicit -->
 		<feature>location-resource-tracking</feature>   <!-- Server tracks who makes unscheduled changes to locations and resources -->
 		<feature>managed-attachments</feature>			<!-- CalDAV Managed Attachments -->
@@ -97,6 +100,7 @@
 		<feature>remove-duplicate-alarms</feature>   	<!-- Server removes any duplicate alarms on PUT -->
 		<feature>query-extended</feature>				<!-- calendar-query-extended extension -->
 		<feature>shared-calendars</feature>				<!-- Shared calendars extension -->
+		<feature>share-calendars-to-groups</feature>	<!-- Share calendars to groups extension -->
 		<feature>schedule-changes</feature>				<!-- schedule-changes property extension -->
 		<feature>split-calendars</feature>				<!-- Calendars are split by component type -->
 		<feature>supported-component-sets</feature>		<!-- CALDAV:supported-calendar-component-sets on calendar homes -->
@@ -106,6 +110,7 @@
 		<feature>timezones-by-reference</feature>		<!-- Timezones by reference enabled -->
 		<feature>timezone-service</feature>				<!-- Timezone service extension for Wiki -->
 		<feature>timezone-std-service</feature>			<!-- Timezone standard service extension -->
+		<feature>travel-time-busy</feature> 			<!-- Travel time appears as busy -->
 		<feature>vavailability</feature>				<!-- VAVAILABILITY on inbox -->
 		<!-- <feature>vpoll</feature> -->				<!-- VPOLL support for store and scheduling -->
 		<feature>webcal</feature>						<!-- Internet calendar subscription via GET on calendar collection -->
@@ -114,7 +119,8 @@
 		<feature>carddav</feature> 						<!-- Basic CardDAV feature enabler -->
 		<feature>default-addressbook</feature> 			<!-- Default address book behavior -->
 		<feature>shared-addressbooks</feature>			<!-- Shared address books extension -->
-		<!-- <feature>directory-gateway</feature> -->	<!-- Directory gateway extension -->
+		<feature>shared-addressbook-groups</feature>	<!-- Shared address book groups extension -->
+		<feature>directory-gateway</feature>			<!-- Directory gateway extension -->
 
 	</features>
 
@@ -233,10 +239,6 @@
 			<value>$calendars:$userstype:/</value>
 		</substitution>
 		<substitution>
-			<key>$calendars_groups:</key>
-			<value>$calendars:$groupstype:/</value>
-		</substitution>
-		<substitution>
 			<key>$calendars_resources:</key>
 			<value>$calendars:$resourcestype:/</value>
 		</substitution>
@@ -255,6 +257,12 @@
 		<substitution>
 			<key>$tasks:</key>
 			<value>tasks</value>
+		</substitution>
+
+		<!-- primary polls-only calendar name-->
+		<substitution>
+			<key>$polls:</key>
+			<value>polls</value>
 		</substitution>
 
 		<!-- inbox name-->
@@ -326,10 +334,6 @@
 			<key>$addressbooks_users:</key>
 			<value>$addressbooks:$userstype:/</value>
 		</substitution>
-		<substitution>
-			<key>$addressbooks_groups:</key>
-			<value>$addressbooks:$groupstype:/</value>
-		</substitution>
 
 		<!-- primary addressbook name -->
 		<substitution>
@@ -357,7 +361,7 @@
 		<!-- guid for admin user -->
 		<substitution>
 			<key>$useradminguid:</key>
-			<value>admin</value>
+			<value>0C8BDE62-E600-4696-83D3-8B5ECABDFD2E</value>
 		</substitution>
 		<!-- password for admin user -->
 		<substitution>
@@ -385,7 +389,7 @@
 			<!-- user guid -->
 			<substitution>
 				<key>$userguid%d:</key>
-				<value>user%02d</value>
+				<value>10000000-0000-0000-0000-000000000%03d</value>
 			</substitution>
 			<!-- user name -->
 			<substitution>
@@ -451,6 +455,11 @@
 				<key>$taskspath%d:</key>
 				<value>$calendarhome%d:/$tasks:</value>
 			</substitution>
+			<!-- relative path to user polls calendar-->
+			<substitution>
+				<key>$pollspath%d:</key>
+				<value>$calendarhome%d:/$polls:</value>
+			</substitution>
 			<!-- relative path to user inbox-->
 			<substitution>
 				<key>$inboxpath%d:</key>
@@ -487,15 +496,15 @@
 			</substitution>
 			<substitution>
 				<key>$cuaddralt%d:</key>
-				<value>$principaluri%d:</value>
+				<value>$cuaddr%d:</value>
 			</substitution>
 			<substitution>
 				<key>$cuaddraltnoslash%d:</key>
-				<value>$principals_uids:$userguid%d:</value>
+				<value>$cuaddr%d:</value>
 			</substitution>
 			<substitution>
 				<key>$cuaddrurn%d:</key>
-				<value>urn:uuid:$userguid%d:</value>
+				<value>urn:x-uid:$userguid%d:</value>
 			</substitution>
 
 			<!-- relative path to user addressbook home-->
@@ -506,7 +515,7 @@
 			<!-- relative path to user addressbook-->
 			<substitution>
 				<key>$addressbookpath%d:</key>
-				<value>$addressbooks_uids:$userguid%d:/$addressbook:</value>
+				<value>$addressbookhome%d:/$addressbook:</value>
 			</substitution>
 		</repeat>
 
@@ -520,7 +529,7 @@
 			<!-- user guid -->
 			<substitution>
 				<key>$puserguid%d:</key>
-				<value>puser%02d</value>
+				<value>60000000-0000-0000-0000-000000000%03d</value>
 			</substitution>
 			<!-- user name -->
 			<substitution>
@@ -622,7 +631,7 @@
 			</substitution>
 			<substitution>
 				<key>$pcuaddralt%d:</key>
-				<value>$pprincipaluri%d:</value>
+				<value>$pcuaddr%d:</value>
 			</substitution>
 			<substitution>
 				<key>$pcuaddraltnoslash%d:</key>
@@ -630,7 +639,7 @@
 			</substitution>
 			<substitution>
 				<key>$pcuaddrurn%d:</key>
-				<value>urn:uuid:$puserguid%d:</value>
+				<value>urn:x-uid:$puserguid%d:</value>
 			</substitution>
 
 			<!-- relative path to user addressbook home-->
