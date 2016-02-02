@@ -5,7 +5,7 @@ Maintainer: Frank Piotrowski <f@pi0.de>
 Uploaders:
  Petter Reinholdtsen <pere@debian.org>
  , Christian M. Amsüss <chrysn@fsfe.org>
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Build-Depends: debhelper (>=9), python, python-pip
 Homepage: http://trac.calendarserver.org/wiki/CalDAVTester
 XS-Python-Version: 2.7
