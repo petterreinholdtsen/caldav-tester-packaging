@@ -16,3 +16,9 @@ override_dh_python2:
 override_dh_auto_clean:
 	dh_auto_clean
 	$(RM) -r CalDAVTester.egg-info
+
+RELBRANCH=CalDAVTester-6.1-dev
+get-orig-source:
+	svn export http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/branches/release/$(RELBRANCH)
+	tar Jcf $(RELBRANCH).tar.xz $(RELBRANCH)
+	$(RM) -r $(RELBRANCH)
