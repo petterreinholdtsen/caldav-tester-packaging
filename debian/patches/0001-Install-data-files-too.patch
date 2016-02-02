@@ -6,22 +6,21 @@ Subject: Install data files too
  setup.py |   11 +++++++++--
  1 file changed, 9 insertions(+), 2 deletions(-)
 
-diff --git a/setup.py b/setup.py
-index a3bad13..c3fd46c 100755
---- a/setup.py
-+++ b/setup.py
-@@ -19,7 +19,7 @@
+Index: caldav-tester-packaging/setup.py
+===================================================================
+--- caldav-tester-packaging.orig/setup.py	2016-02-02 09:56:11.659193948 +0100
++++ caldav-tester-packaging/setup.py	2016-02-02 09:56:30.571371957 +0100
+@@ -19,6 +19,7 @@
  from __future__ import print_function
  
- from itertools import chain
--from os import listdir, environ as environment
-+from os import walk, listdir, environ as environment
  from os.path import dirname, abspath, join as joinpath
++from os import walk
+ from setuptools import setup, find_packages as setuptools_find_packages
  import errno
- import subprocess
-@@ -36,6 +36,13 @@ def find_packages():
- 
-     return modules + setuptools_find_packages()
+ import os
+@@ -41,6 +42,13 @@
+         ])
+     return modules
  
 +def find_data():
 +    data = []
@@ -33,7 +32,7 @@ index a3bad13..c3fd46c 100755
  
  
  def version():
-@@ -179,7 +186,7 @@ def doSetup():
+@@ -173,7 +181,7 @@
          packages=find_packages(),
          package_data={},
          scripts=[],
