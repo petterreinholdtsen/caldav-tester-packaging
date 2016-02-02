@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Frank Piotrowski <f@pi0.de>
 Standards-Version: 3.9.5
 Build-Depends: debhelper (>=9), python, python-pip
+Homepage: http://trac.calendarserver.org/wiki/CalDAVTester
 XS-Python-Version: 2.7
 
 Package: caldav-tester
