@@ -2,7 +2,7 @@
 # coding=utf-8
 #
 ##
-# Copyright (c) 2006-2013 Apple Inc. All rights reserved.
+# Copyright (c) 2006-2015 Apple Inc. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -56,7 +56,7 @@ details = {
 base_dir = "../CalendarServer/"
 
 number_of_users = 40
-number_of_groups = 10
+number_of_groups = 40
 number_of_publics = 10
 number_of_resources = 20
 number_of_locations = 10
@@ -352,6 +352,7 @@ def patchConfig(admin):
 
     # Needed for CDT
     plist["EnableAnonymousReadRoot"] = True
+    plist["EnableControlAPI"] = True
     if "Options" not in plist["Scheduling"]:
         plist["Scheduling"]["Options"] = dict()
 

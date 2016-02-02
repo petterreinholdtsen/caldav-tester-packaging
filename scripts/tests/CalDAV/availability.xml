@@ -3,7 +3,7 @@
 <!DOCTYPE caldavtest SYSTEM "caldavtest.dtd">
 
 <!--
- Copyright (c) 2006-2013 Apple Inc. All rights reserved.
+ Copyright (c) 2006-2015 Apple Inc. All rights reserved.
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -494,9 +494,9 @@
 					<callback>dataString</callback>
 					<arg>
 						<name>contains</name>
-						<value>FREEBUSY;FBTYPE=BUSY:$now.year.1:0102T170000Z/PT1H</value>
-						<value>FREEBUSY;FBTYPE=BUSY-UNAVAILABLE:$now.year.1:0102T000000Z/$now.year.1:0102T140000Z,$now.year.1:010
- 2T220000Z/$now.year.1:0103T000000Z</value>
+						<value>FREEBUSY;FBTYPE=BUSY:$now.year.1:0104T170000Z/PT1H</value>
+						<value>FREEBUSY;FBTYPE=BUSY-UNAVAILABLE:$now.year.1:0104T000000Z/$now.year.1:0104T140000Z,$now.year.1:010
+ 4T220000Z/$now.year.1:0105T000000Z</value>
 					</arg>
 				</verify>
 			</request>

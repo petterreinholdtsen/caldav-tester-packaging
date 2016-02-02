@@ -1,5 +1,5 @@
 ##
-# Copyright (c) 2010-2013 Apple Inc. All rights reserved.
+# Copyright (c) 2010-2015 Apple Inc. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -44,8 +44,8 @@ class Verifier(object):
             return False, "        No response body"
 
         # Must be application/json
-        ct = response.msg.getheaders("content-type")
-        if ct[0].split(";")[0] != "application/json":
+        ct = response.msg.getheaders("content-type")[0].split(";")[0]
+        if ct != "application/json" and not ct.endswith("+json"):
             return False, "        Wrong Content-Type: %s" % (ct,)
 
         # Read in json
@@ -86,18 +86,23 @@ class Verifier(object):
                     resulttxt += "        Items not returned in JSON for %s\n" % (path,)
 
         for jpath in notexists:
+            if jpath.find("~$") != -1:
+                path, value = jpath.split("~$")
+            else:
+                path, value = jpath, None
             try:
-                jp = JSONMatcher(jpath)
+                jp = JSONMatcher(path)
             except Exception:
                 result = False
                 resulttxt += "        Invalid JSON pointer for %s\n" % (jpath,)
             else:
                 try:
-                    jp.match(j)
+                    jobjs = jp.match(j)
                 except JSONPointerMatchError:
                     pass
                 else:
-                    resulttxt += "        Items returned in JSON for %s\n" % (jpath,)
-                    result = False
+                    if len(jobjs):
+                        resulttxt += "        Items returned in JSON for %s\n" % (jpath,)
+                        result = False
 
         return result, resulttxt

@@ -1,5 +1,5 @@
 ##
-# Copyright (c) 2006-2013 Apple Inc. All rights reserved.
+# Copyright (c) 2006-2015 Apple Inc. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,15 +13,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 ##
-import urllib
 
 """
 Verifier that checks a multistatus response to make sure that the specified hrefs
 are returned with appropriate status codes.
 """
 
+from src.utils import processHrefSubstitutions
 from xml.etree.cElementTree import ElementTree
 from StringIO import StringIO
+import urllib
 
 class Verifier(object):
 
@@ -47,9 +48,9 @@ class Verifier(object):
             prefix = prefix[0] if prefix[0] != "-" else ""
         else:
             prefix = uri
-        okhrefs = [(prefix + i).rstrip("/") for i in okhrefs]
-        nohrefs = [(prefix + i).rstrip("/") for i in nohrefs]
-        badhrefs = [(prefix + i).rstrip("/") for i in badhrefs]
+        okhrefs = processHrefSubstitutions(okhrefs, prefix)
+        nohrefs = processHrefSubstitutions(nohrefs, prefix)
+        badhrefs = processHrefSubstitutions(badhrefs, prefix)
         count = [int(eval(i)) for i in count]
         totalcount = [int(eval(i)) for i in totalcount]
         responsecount = [int(eval(i)) for i in responsecount]
@@ -127,7 +128,10 @@ class Verifier(object):
             return result, resulttxt
 
         # Check for total count
-        if len(totalcount) == 1:
+        if len(totalcount) > 0:
+            # Add the 2nd value to the 1st if it exists
+            if len(totalcount) == 2:
+                totalcount[0] += totalcount[1]
             if len(ok_result_set) != totalcount[0]:
                 result = False
                 resulttxt += "        %d items returned, but %d items expected" % (len(ok_result_set), totalcount[0],)

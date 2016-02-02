@@ -3,7 +3,7 @@
 <!DOCTYPE serverinfo SYSTEM "serverinfo.dtd">
 
 <!--
- Copyright (c) 2006-2013 Apple Inc. All rights reserved.
+ Copyright (c) 2006-2015 Apple Inc. All rights reserved.
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -80,10 +80,12 @@
 		<feature>attachments-collection</feature>		<!-- Server uses a collection in same WebDAV tree to store attachments -->
 		<feature>auto-accept</feature>					<!-- Auto-accept for rooms & locations -->
 		<feature>auto-accept-modes</feature>			<!-- Auto-accept modes -->
+		<feature>client-fix-TRANSP</feature>			<!-- fix client TRANSP -->
 		<!-- <feature>dropbox</feature> -->				<!-- dropbox extension -->
 		<feature>default-alarms</feature>				<!-- default alarms extension -->
 		<feature>EMAIL parameter</feature>				<!-- Server normalizes cuaddress and adds EMAIL parameter -->
 		<feature>extended-freebusy</feature>	      	<!-- Extended freebusy response -->
+		<feature>freebusy-url</feature>	      			<!-- Freebusy URL -->
 		<feature>group-attendee-expansion</feature>	    <!-- Auto-expansion of group attendees -->
 		<feature>implicit-scheduling</feature>			<!-- CalDAV scheduling - implicit -->
 		<feature>location-resource-tracking</feature>   <!-- Server tracks who makes unscheduled changes to locations and resources -->
@@ -299,6 +301,24 @@
 		<substitution>
 			<key>$freebusy:</key>
 			<value>freebusy</value>
+		</substitution>
+
+		<!-- Sync home collection items - use "-" to include the home resource-->
+		<substitution>
+			<key>$calendar_home_items_initial_sync:</key>
+			<value>[-,$calendar:/,$tasks:/,$inbox:/,$outbox:/,$freebusy:,$notification:/]</value>
+		</substitution>
+
+		<!-- Sync collection extra items - use "-" to include the collection-->
+		<substitution>
+			<key>$calendar_sync_extra_items:</key>
+			<value>[-]</value>
+		</substitution>
+
+		<!-- Sync collection extra count - gets added to the totalcount value-->
+		<substitution>
+			<key>$calendar_sync_extra_count:</key>
+			<value>1</value> <!-- the request-uri resource is returned when no token passed-->
 		</substitution>
 
 		<!-- server-to-server inbox-->
@@ -651,6 +671,45 @@
 			<substitution>
 				<key>$paddressbookpath%d:</key>
 				<value>$paddressbookhome%d:/$addressbook:</value>
+			</substitution>
+		</repeat>
+
+		<!--  Forty Group accounts -->
+		<repeat count="40">
+			<substitution>
+				<key>$groupid%d:</key>
+				<value>group%02d</value>
+			</substitution>
+			<!-- group guid-->
+			<substitution>
+				<key>$groupguid%d:</key>
+				<value>20000000-0000-0000-0000-000000000%03d</value>
+			</substitution>
+			<!-- group name-->
+			<substitution>
+				<key>$groupname%d:</key>
+				<value>Group %02d</value>
+			</substitution>
+			<!-- relative path to first group principal resource-->
+			<substitution>
+				<key>$gprincipal%d:</key>
+				<value>$principals_resources:$groupid%d:/</value>
+			</substitution>
+			<substitution>
+				<key>$gprincipaluri%d:</key>
+				<value>$principals_uids:$groupguid%d:/</value>
+			</substitution>
+			<substitution>
+				<key>$gemail%d:</key>
+				<value>$groupid%d:@example.com</value>
+			</substitution>
+			<substitution>
+				<key>$gcuaddralt%d:</key>
+				<value>$gprincipaluri%d:</value>
+			</substitution>
+			<substitution>
+				<key>$gcuaddrurn%d:</key>
+				<value>urn:x-uid:$groupguid%d:</value>
 			</substitution>
 		</repeat>
 

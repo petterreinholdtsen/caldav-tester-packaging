@@ -15,6 +15,7 @@ COMMAND LINE OPTIONS
 testcaldav.py \
 	[-s filename] \
 	[-x dirpath] \
+	[--basedir dirpath] \
 	[--ssl] \
 	[--all] \
 	[--random] \
@@ -32,6 +33,9 @@ testcaldav.py \
 
 	-x : directory path for test scripts
 	(default is 'scripts/tests').
+
+	--basedir : directory path for serverinfo.xml, test/ and data/,
+		overrides -s and -x values
 
 	-p : filename specifies the file to use to populate the server with
 	data. Server data population only occurs when this option is
@@ -304,6 +308,7 @@ caldavtest.dtd:
 				6) GETCHANGED - the tool tracks the Etags on resources retrieved via GET. This special method will poll the specified
 								resource until the Etag returned in the response is different from the one found in the most recent
 								test.  
+				6) GETOTHER - the tool finds the newest sibling resource to the one specified in the <ruri> element.  
 	
 		ELEMENT <ruri>
 			the URI of the request. Multiple <ruri>'s are allowed with DELETEALL only.
@@ -337,6 +342,30 @@ caldavtest.dtd:
 			ELEMENT <filepath>
 				the relative path for the file containing the request body
 				data.
+	
+			ELEMENT <generator>
+				a callback and set of arguments used to generate the data.
+				
+				ELEMENT <callback>
+					the name of the generator method to execute.
+		
+				ELEMENT <arg>
+					arguments sent to the generator method.
+		
+					ELEMENT <name>
+						the name of the argument.
+		
+					ELEMENT <value>
+						values for the argument.
+	
+			ELEMENT <substitute>
+				a set of substitution variables to use on this data only.
+			
+				ELEMENT <name>
+					the variable name.
+		
+				ELEMENT <value>
+					the variable value.
 
 		ELEMENT <verify>
 			if present, used to specify a procedures for verifying that the
@@ -817,8 +846,15 @@ xmlElementMatch:
 	[^tag] - node has child element "tag".
 	[^tag=text] - node has child element "tag" with text "text".
 	[|] - node is empty.
+	[||] - node is not empty.
 	[json] - node contains valid JSON data.
 	[icalendar] - node contains valid iCalendare data.
+	
+	Each path segment can now have its own test and "../" can be used to move up to
+	the parent. This allows testing for an element matching specific content plus
+	its sibling matching other specific content. e.g., "/{D}A/{D}B[=b]/../{D}C[=c]
+	which checks for an element {D}A with two child elements {D}B and {D}C each
+	with a specific value.
 	
 	Argument: 'parent'
 		ElementTree style path for an XML element to use as the root for any

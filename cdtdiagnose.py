@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 ##
-# Copyright (c) 2013 Apple Inc. All rights reserved.
+# Copyright (c) 2013-2015 Apple Inc. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,6 +20,7 @@ import os
 import datetime
 import shutil
 import sys
+import argparse
 from subprocess import Popen, PIPE
 
 server_root = "/Applications/Server.app/Contents/ServerRoot"
@@ -45,6 +46,13 @@ def cmd(args, input=None, raiseOnFail=True):
 
 if __name__ == "__main__":
 
+    parser = argparse.ArgumentParser(
+        description='Gather CalDAVTester diagnostics.',
+    )
+    parser.add_argument('-d', '--directory', action='store',
+              help='Destination directory for diagnostics archive')
+    args = parser.parse_args()
+
     print "Running CDT diagnostics due to test failure."
     log = []
 
@@ -57,6 +65,14 @@ if __name__ == "__main__":
     now = datetime.datetime.now()
     now = now.replace(microsecond=0)
     dirname = "cdtdiagnose-%s" % (now.strftime("%Y%m%d-%H%M%S"),)
+
+    if args.directory is not None:
+        if not os.path.isdir(args.directory):
+            print "Specified target directory path is invalid, using default."
+        else:
+            dirname = os.path.join(args.directory, dirname)
+
+    print "Saving diagnostic archive to: {}".format(dirname,)
     try:
         os.mkdir(dirname)
     except Exception as e:
@@ -79,12 +95,12 @@ if __name__ == "__main__":
         error("Could not copy server info file: '%s' to '%s'" % (server_path, archive_path,), e)
 
     # Get server logs
-    server_path = "/var/log/caldavd"
+    logs_path = os.path.join(library_root, "Logs")
     archive_path = os.path.join(dirname, "logs")
     try:
-        shutil.copytree(server_path, archive_path)
+        shutil.copytree(logs_path, archive_path)
     except Exception as e:
-        error("Could not copy server logs: '%s' to '%s'" % (server_path, archive_path,), e)
+        error("Could not copy server logs: '%s' to '%s'" % (logs_path, archive_path,), e)
 
     # Get server config files
     server_path = os.path.join(server_root, "etc", "caldavd")

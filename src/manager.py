@@ -1,5 +1,5 @@
 ##
-# Copyright (c) 2006-2013 Apple Inc. All rights reserved.
+# Copyright (c) 2006-2015 Apple Inc. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -48,6 +48,7 @@ class manager(object):
 
     def __init__(self, text=True):
         self.server_info = serverinfo()
+        self.data_dir = None
         self.pretest = None
         self.posttest = None
         self.tests = []
@@ -62,6 +63,7 @@ class manager(object):
         self.print_request = False
         self.print_response = False
         self.print_request_response_on_error = False
+        self.debug = False
 
         self.results = []
         self.totals = {
@@ -115,19 +117,22 @@ class manager(object):
         return testfile[-1]["tests"]
 
 
-    def testResult(self, testsuite, name, details, result,):
-        testsuite.append({
+    def testResult(self, testsuite, name, details, result, addons=None):
+        result_details = {
             "name": name,
             "result": result,
             "details": details
-        })
+        }
+        if addons:
+            result_details.update(addons)
+        testsuite.append(result_details)
         self.totals[result] += 1
         self.message("testResult", testsuite[-1])
 
 
     def readXML(self, serverfile, testfiles, ssl, all, moresubs={}):
 
-        self.message("trace", "Reading Server Info from \"{}\"".format(serverfile))
+        self.message("trace", "Reading Server Info from \"{s}\"".format(s=serverfile))
 
         # Open and parse the server config file
         try:
@@ -174,14 +179,14 @@ class manager(object):
             caldavtest_node = tree.getroot()
             if caldavtest_node.tag != src.xmlDefs.ELEMENT_CALDAVTEST:
                 if ignore_root:
-                    self.message("trace", "Ignoring file \"{}\" because it is not a test file".format(fname))
+                    self.message("trace", "Ignoring file \"{f}\" because it is not a test file".format(f=fname))
                     return None
                 else:
                     raise EX_INVALID_CONFIG_FILE
             if not len(caldavtest_node):
                 raise EX_INVALID_CONFIG_FILE
 
-            self.message("Reading Test Details from \"{}\"".format(fname))
+            self.message("Reading Test Details from \"{f}\"".format(f=fname))
             test = caldavtest(self, fname)
             test.parseXML(caldavtest_node)
             return test
@@ -209,6 +214,7 @@ class manager(object):
     def readCommandLine(self):
         sname = "scripts/server/serverinfo.xml"
         dname = "scripts/tests"
+        basedir = None
         fnames = []
         ssl = False
         all = False
@@ -225,6 +231,7 @@ class manager(object):
             [
                 "ssl",
                 "all",
+                "basedir=",
                 "subdir=",
                 "exclude=",
                 "pretest=",
@@ -238,6 +245,7 @@ class manager(object):
                 "print-details-onfail",
                 "always-print-request",
                 "always-print-response",
+                "debug"
             ],
         )
 
@@ -251,6 +259,15 @@ class manager(object):
                 ssl = True
             elif option == "--all":
                 all = True
+            elif option == "--basedir":
+                basedir = value
+                sname = os.path.join(basedir, "serverinfo.xml")
+                dname = os.path.join(basedir, "tests")
+                self.data_dir = os.path.join(basedir, "data")
+
+                # Also add parent to PYTHON path
+                sys.path.append(os.path.dirname(basedir))
+
             elif option == "--subdir":
                 subdir = value + "/"
             elif option == "--exclude":
@@ -281,8 +298,10 @@ class manager(object):
                 random_order = True
             elif option == "--random-seed":
                 random_seed = value
+            elif option == "--debug":
+                self.debug = True
 
-        if all:
+        if all or not args:
             files = []
             os.path.walk(dname, lambda arg, dir, names: files.extend([os.path.join(dir, name) for name in names]) if not dir.startswith("test") else None, None)
             for file in files:
@@ -413,3 +432,7 @@ class manager(object):
         lines = data.split("\n")
         procdata = lines[1].split()
         return int(procdata[6]), int(procdata[7])
+
+
+    def getDataPath(self, fpath):
+        return os.path.join(self.data_dir, fpath) if self.data_dir else fpath

@@ -1,5 +1,5 @@
 ##
-# Copyright (c) 2006-2013 Apple Inc. All rights reserved.
+# Copyright (c) 2006-2015 Apple Inc. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -45,8 +45,7 @@ class testsuite(object):
         a test file we also need test suites to have unique UIDs. The "change-uid" attribute
         can be used to reset the active UIDs for a test suite.
         """
-        if self.changeuid:
-            self.manager.server_info.newUIDs()
+        return self.manager.server_info.newUIDs() if self.changeuid else set()
 
 
     def missingFeatures(self):
