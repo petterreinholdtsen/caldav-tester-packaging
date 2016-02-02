@@ -1,11 +1,19 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 
 Files: *
-Copyright: 2006-2014 Apple Inc.
+Copyright: 2006-2015 Apple Inc.
 License: Apache-2.0 
 
 Files: debian/
 Copyright: 2014 Frank Piotrowski <f@pi0.de>
+License: GPL-2+
+
+Files: debian/patches/*
+Copyright: 2016 Petter Reinholdtsen <pere@hungry.com>
+License: Apache-2.0
+
+Files: debian/patches/0001-Install-data-files-too.patch
+Copyright: 2014 Guido Günther <agx@sigxcpu.org>
 License: GPL-2+
 
 Files: src/unittest/test_jsonPointer.py
