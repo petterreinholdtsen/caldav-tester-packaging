@@ -12,3 +12,7 @@ override_dh_auto_install:
 
 override_dh_python2:
 	dh_python2 usr/share/caldavtester
+
+override_dh_auto_clean:
+	dh_auto_clean
+	$(RM) -r CalDAVTester.egg-info
