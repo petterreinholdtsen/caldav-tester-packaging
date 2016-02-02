@@ -14,7 +14,7 @@ License: Apache-2.0
 
 Files: debian/patches/0001-Install-data-files-too.patch
 Copyright: 2014 Guido Günther <agx@sigxcpu.org>
-License: GPL-2+
+License: GPL-3+
 
 Files: src/unittest/test_jsonPointer.py
 Copyright: 2012 Cyrus Daboo <cdaboo@apple.com>
@@ -29,3 +29,8 @@ License: GPL-2+
  On Debian systems, the full text of the GPL-2
  License can be found in the file
  `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-3+
+ On Debian systems, the full text of the GPL-3
+ License can be found in the file
+ `/usr/share/common-licenses/GPL-3'.

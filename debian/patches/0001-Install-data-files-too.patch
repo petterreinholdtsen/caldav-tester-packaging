@@ -1,6 +1,7 @@
 From: =?UTF-8?q?Guido=20G=C3=BCnther?= <agx@sigxcpu.org>
 Date: Sun, 30 Mar 2014 01:54:10 +0100
 Subject: Install data files too
+License: GPL-3+
 
 ---
  setup.py |   11 +++++++++--
