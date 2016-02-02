@@ -1,5 +1,11 @@
-caldav-tester (6.1-1) UNRELEASED; urgency=low
+caldav-tester (6.1-1) unstable; urgency=low
 
   * Initial release. (Closes: #742999)
 
- -- Frank Piotrowski <f@pi0.de>  Sat, 29 Mar 2014 21:31:44 +0100
+  [ Frank Piotrowski ]
+  * Initial packaging.
+
+  [ Petter Reinholdtsen ]
+  * Updated packaging and update to more recent upstream source.
+
+ -- Petter Reinholdtsen <pere@debian.org>  Tue, 02 Feb 2016 14:07:02 +0000
