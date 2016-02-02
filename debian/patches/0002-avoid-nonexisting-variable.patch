@@ -5,9 +5,9 @@ Last-Update: 2016-02-01
 
 Index: caldav-tester-packaging/src/manager.py
 ===================================================================
---- caldav-tester-packaging.orig/src/manager.py	2016-02-02 09:57:13.699780618 +0100
-+++ caldav-tester-packaging/src/manager.py	2016-02-02 09:57:13.695780579 +0100
-@@ -203,8 +203,6 @@
+--- caldav-tester-packaging.orig/src/manager.py	2016-02-02 09:16:57.053308115 +0000
++++ caldav-tester-packaging/src/manager.py	2016-02-02 09:16:57.049308102 +0000
+@@ -208,8 +208,6 @@
          if self.posttest is not None:
              self.posttest = _loadFile(self.posttest, False)
  
