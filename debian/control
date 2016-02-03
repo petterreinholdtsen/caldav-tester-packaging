@@ -1,9 +1,9 @@
 Source: caldav-tester
 Section: net
 Priority: optional
-Maintainer: Frank Piotrowski <f@pi0.de>
+Maintainer: Petter Reinholdtsen <pere@debian.org>
 Uploaders:
- Petter Reinholdtsen <pere@debian.org>
+ Frank Piotrowski <f@pi0.de>
  , Christian M. Amsüss <chrysn@fsfe.org>
 Standards-Version: 3.9.6
 Build-Depends: debhelper (>=9), dh-python, python, python-pip
