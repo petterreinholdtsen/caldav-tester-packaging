@@ -1,3 +1,15 @@
+caldav-tester (6.1-2) unstable; urgency=medium
+
+  * Added Vcs* links in control file.
+  * Relicense 0001-Install-data-files-too.patch after Guido agreed
+    making it compatible with the upstream license.
+  * Make me the maintainer and Frank an uploader while we figure out a
+    more sensible configuration.
+  * Added needed python-setuptools to build-depends to fix broken build.
+    (Closes: #813666)
+
+ -- Petter Reinholdtsen <pere@debian.org>  Thu, 04 Feb 2016 11:29:52 +0100
+
 caldav-tester (6.1-1) unstable; urgency=low
 
   * Initial release. (Closes: #742999)
