@@ -6,7 +6,11 @@ Uploaders:
  Frank Piotrowski <f@pi0.de>
  , Christian M. Amsüss <chrysn@fsfe.org>
 Standards-Version: 3.9.6
-Build-Depends: debhelper (>=9), dh-python, python, python-pip
+Build-Depends: debhelper (>=9)
+ , dh-python
+ , python-setuptools
+ , python
+ , python-pip
 Homepage: http://trac.calendarserver.org/wiki/CalDAVTester
 XS-Python-Version: 2.7
 Vcs-Browser: http://anonscm.debian.org/cgit/collab-maint/caldav-tester.git
