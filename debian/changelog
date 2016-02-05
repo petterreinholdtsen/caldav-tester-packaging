@@ -1,3 +1,11 @@
+caldav-tester (6.1-3) unstable; urgency=medium
+
+  * Added required python-pycalendar as binary dependency.
+  * Added simple autopkgtest script to verify that the program can run.
+  * Changed Standards-Version from 3.9.6 to 3.9.7.
+
+ -- Petter Reinholdtsen <pere@debian.org>  Fri, 05 Feb 2016 15:14:10 +0000
+
 caldav-tester (6.1-2) unstable; urgency=medium
 
   * Added Vcs* links in control file.
