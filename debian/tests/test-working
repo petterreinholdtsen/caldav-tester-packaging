@@ -1,15 +1,19 @@
 #!/bin/sh
 #
-# Check if the program is running and produce expectable output.
+# Check if the program is running and produce expected output.
 
-if testcaldav  --stop > "$ADTTMP/run.log" 2>&1 ; then
-    if grep -q scripts.tests.CalDAV.freebusy "$ADTTMP/run.log"; then
-	echo "success: running testcaldav seem to work"
-    else
-	echo "error: output from testcaldav was not as expected"
-    fi
+retval=0
+
+error() { retval=1; echo "error:" "$@"; }
+
+./testcaldav.py  --stop > "$ADTTMP/run.log" 2>&1 || true
+
+if grep -q scripts.tests.CalDAV.freebusy "$ADTTMP/run.log"; then
+    echo "success: running testcaldav seem to work"
 else
-    echo "error: unable to run testcaldav"
+    error "output from testcaldav was not as expected"
 fi
 
 cat "$ADTTMP/run.log"
+
+exit $retval
