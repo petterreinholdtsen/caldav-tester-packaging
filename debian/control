@@ -20,6 +20,7 @@ Package: caldav-tester
 Section: net
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}
+ , python-pycalendar
 Description: CalDAV and CardDAV server test & performance suite
  CalDAVTester is a test and performance application designed to work with
  CalDAV and / or CardDAV servers and tests various aspects of their protocol
