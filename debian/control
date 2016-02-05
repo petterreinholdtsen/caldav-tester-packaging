@@ -12,6 +12,7 @@ Build-Depends: debhelper (>=9)
  , python
  , python-pip
 Homepage: http://trac.calendarserver.org/wiki/CalDAVTester
+Testsuite: autopkgtest
 XS-Python-Version: 2.7
 Vcs-Browser: http://anonscm.debian.org/cgit/collab-maint/caldav-tester.git
 Vcs-Git: git://anonscm.debian.org/collab-maint/caldav-tester.git
