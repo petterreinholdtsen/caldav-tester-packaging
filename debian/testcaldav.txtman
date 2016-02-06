@@ -1,0 +1,25 @@
+NAME
+
+  testcaldav - CalDAV/CardDAV protocol tester
+
+SYNOPSIS
+
+  testcaldav [options]
+
+DESCRIPTION
+
+  testcaldav connect to a CalDAV and CardDAV server and test its
+  functionallity to detect errors.
+
+  By default it will read the configuration from
+  scripts/server/serverinfo.xml to locate the server to talk to.
+
+SEE ALSO
+
+  calendarserver(1), calypso(1), radicale(1)
+
+AUTHOR
+
+  This manual page for testcaldav was written by Petter Reinholdtsen
+  <pere@hungry.com> and is licensed using the same terms as the
+  CalDAVTester source.
