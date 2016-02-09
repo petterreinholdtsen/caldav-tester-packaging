@@ -1,3 +1,14 @@
+caldav-tester (7.0-1) unstable; urgency=medium
+
+  * New upstream version 7.0.
+  * Update manual page, mention some of the upstream authors.
+  * Rewrite get-orig-source to use the new upstream tags.
+  * Added simple debian/watch file tracking upstream tags.
+  * Make autopkgtest script more robust, not depending on a specific
+    test run order.
+
+ -- Petter Reinholdtsen <pere@debian.org>  Tue, 09 Feb 2016 11:02:33 +0000
+
 caldav-tester (6.1-4) unstable; urgency=medium
 
   * Rewrite autopkgtest script to return a sensible exit status.
