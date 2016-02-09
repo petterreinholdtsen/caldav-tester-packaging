@@ -22,7 +22,6 @@ from src.serverinfo import serverinfo
 from xml.etree.cElementTree import ElementTree
 from xml.parsers.expat import ExpatError
 import getopt
-import httplib
 import os
 import random
 import src.xmlDefs
@@ -91,6 +90,14 @@ class manager(object):
         map(lambda x: x.message(message, *args, **kwargs), self.observers)
 
 
+    def testProgress(self, count, total):
+        results = {
+            "count": count,
+            "total": total,
+        }
+        self.message("testProgress", results)
+
+
     def testFile(self, name, details, result=None):
         self.results.append({
             "name": name,
@@ -153,19 +160,24 @@ class manager(object):
         self.server_info.port = self.server_info.sslport if ssl else self.server_info.nonsslport
         self.server_info.port2 = self.server_info.sslport2 if ssl else self.server_info.nonsslport2
 
-        moresubs["$host:"] = "%s://%s:%d" % (
-            "https" if ssl else "http",
-            self.server_info.host,
-            self.server_info.port,
+        moresubs["$host:"] = "%s://%s" % (
+            "https" if ssl else "http", self.server_info.host,
         )
-        moresubs["$hostssl:"] = "https://%s:%d" % (self.server_info.host, self.server_info.sslport,)
+        if (ssl and self.server_info.port != 443) or (not ssl and self.server_info.port != 80):
+            moresubs["$host:"] += ":%d" % (self.server_info.port,)
+        moresubs["$hostssl:"] = "https://%s" % (self.server_info.host,)
+        if self.server_info.sslport != 443:
+            moresubs["$hostssl:"] += ":%d" % (self.server_info.sslport,)
 
-        moresubs["$host2:"] = "%s://%s:%d" % (
+        moresubs["$host2:"] = "%s://%s" % (
             "https" if ssl else "http",
             self.server_info.host2,
-            self.server_info.port2,
         )
-        moresubs["$hostssl2:"] = "https://%s:%d" % (self.server_info.host2, self.server_info.sslport2,)
+        if (ssl and self.server_info.port2 != 443) or (not ssl and self.server_info.port2 != 80):
+            moresubs["$host2:"] += ":%d" % (self.server_info.port2,)
+        moresubs["$hostssl2:"] = "https://%s" % (self.server_info.host2,)
+        if self.server_info.sslport2 != 443:
+            moresubs["$hostssl2:"] += ":%d" % (self.server_info.sslport2,)
 
         self.server_info.addsubs(moresubs)
 
@@ -363,7 +375,9 @@ class manager(object):
         failed = 0
         ignored = 0
         try:
-            for test in self.tests:
+            for ctr, test in enumerate(self.tests):
+                if len(self.tests) > 1:
+                    self.testProgress(ctr + 1, len(self.tests))
                 if self.pretest is not None:
                     o, f, i = self.pretest.run()
 
@@ -400,23 +414,6 @@ class manager(object):
             self.logFile.close()
 
         return failed, endTime - startTime
-
-
-    def httpRequest(self, method, uri, headers, data):
-
-        # Do the http request
-        http = httplib.HTTPConnection(self.server_info.host, self.server_info.port)
-        try:
-            http.request(method, uri, data, headers)
-
-            response = http.getresponse()
-
-            respdata = response.read()
-
-        finally:
-            http.close()
-
-        return response.status, respdata
 
 
     def getMemusage(self):
