@@ -7,8 +7,8 @@ License: Apache 2 (same as caldav-tester itself)
 
 Index: caldav-tester-packaging/src/caldavtest.py
 ===================================================================
---- caldav-tester-packaging.orig/src/caldavtest.py	2016-02-02 09:21:14.598371067 +0000
-+++ caldav-tester-packaging/src/caldavtest.py	2016-02-02 09:22:31.946474450 +0000
+--- caldav-tester-packaging.orig/src/caldavtest.py	2016-02-09 11:00:05.432918641 +0000
++++ caldav-tester-packaging/src/caldavtest.py	2016-02-09 11:00:05.428918593 +0000
 @@ -19,7 +19,7 @@
  """
  
@@ -18,7 +18,7 @@ Index: caldav-tester-packaging/src/caldavtest.py
  from src.httpshandler import SmartHTTPConnection
  from src.jsonPointer import JSONMatcher
  from src.manager import manager
-@@ -1015,7 +1015,7 @@
+@@ -1029,7 +1029,7 @@
      def _calProperty(self, propertyname, respdata):
  
          try:

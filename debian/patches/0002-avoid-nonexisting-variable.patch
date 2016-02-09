@@ -6,9 +6,9 @@ License: Apache 2 (same as caldav-tester itself)
 
 Index: caldav-tester-packaging/src/manager.py
 ===================================================================
---- caldav-tester-packaging.orig/src/manager.py	2016-02-02 09:16:57.053308115 +0000
-+++ caldav-tester-packaging/src/manager.py	2016-02-02 09:16:57.049308102 +0000
-@@ -208,8 +208,6 @@
+--- caldav-tester-packaging.orig/src/manager.py	2016-02-09 11:00:05.416918450 +0000
++++ caldav-tester-packaging/src/manager.py	2016-02-09 11:00:05.412918402 +0000
+@@ -220,8 +220,6 @@
          if self.posttest is not None:
              self.posttest = _loadFile(self.posttest, False)
  

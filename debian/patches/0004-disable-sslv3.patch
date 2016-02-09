@@ -4,11 +4,11 @@ Author: Petter Reinholdtsen <pere@hungry.com>
 Last-Update: 2016-02-02
 License: Apache 2 (same as caldav-tester itself)
 
-diff --git a/src/httpshandler.py b/src/httpshandler.py
-index d2dec63..b7b7da4 100644
---- a/src/httpshandler.py
-+++ b/src/httpshandler.py
-@@ -35,7 +35,7 @@ class HTTPSVersionConnection(httplib.HTTPSConnection):
+Index: caldav-tester-packaging/src/httpshandler.py
+===================================================================
+--- caldav-tester-packaging.orig/src/httpshandler.py	2016-02-09 11:00:05.448918832 +0000
++++ caldav-tester-packaging/src/httpshandler.py	2016-02-09 11:00:05.444918784 +0000
+@@ -37,7 +37,7 @@
  
  cached_types = (
      (set(), sslmodule.PROTOCOL_TLSv1),
