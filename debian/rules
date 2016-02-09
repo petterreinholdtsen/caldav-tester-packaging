@@ -24,7 +24,7 @@ override_dh_installman: debian/testcaldav.1
 debian/testcaldav.1: debian/testcaldav.txtman
 	txt2man -t TESTCALDAV -d 2016-02-06 -s 1 debian/testcaldav.txtman > $@
 
-RELBRANCH=CalDAVTester-6.1
+RELBRANCH=CalDAVTester-7.0
 get-orig-source:
 	svn export http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/tags/release/$(RELBRANCH)
 	tar Jcf $(RELBRANCH).tar.xz $(RELBRANCH)
