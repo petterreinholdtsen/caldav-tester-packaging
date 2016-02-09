@@ -20,6 +20,9 @@ SEE ALSO
 
 AUTHOR
 
+  The CalDAVTester system is written for the Apple Inc. project
+  calendar-server by Cyrus Daboo, Andre LaBranche and others.
+
   This manual page for testcaldav was written by Petter Reinholdtsen
   <pere@hungry.com> and is licensed using the same terms as the
   CalDAVTester source.
