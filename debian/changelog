@@ -1,3 +1,10 @@
+caldav-tester (7.0-2) unstable; urgency=medium
+
+  * Disabled 0003-older-pycalendar.patch as a new enough pycalendar is
+    in Debian unstable.
+
+ -- Petter Reinholdtsen <pere@debian.org>  Sun, 21 Feb 2016 17:31:54 +0100
+
 caldav-tester (7.0-1) unstable; urgency=medium
 
   * New upstream version 7.0.
