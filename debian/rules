@@ -29,3 +29,6 @@ get-orig-source:
 	svn export http://svn.calendarserver.org/repository/calendarserver/CalDAVTester/tags/release/$(RELBRANCH)
 	tar Jcf $(RELBRANCH).tar.xz $(RELBRANCH)
 	$(RM) -r $(RELBRANCH)
+
+update-copyright:
+	cme update dpkg-copyright -quiet
