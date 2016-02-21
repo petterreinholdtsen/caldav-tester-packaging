@@ -1,6 +1,7 @@
 Description: Work with the older python-calendar in Debian
  Revert code to use pycalendard.calendar which was used by upstream
- before version 6.0.
+ before version 6.0.  This is needed to work with python-pycalendar
+ before 2.1~svn15020-1.
 Author: Petter Reinholdtsen <pere@hungry.com>
 Last-Update: 2016-02-02
 License: Apache 2 (same as caldav-tester itself)
