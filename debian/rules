@@ -31,4 +31,4 @@ get-orig-source:
 	$(RM) -r $(RELBRANCH)
 
 update-copyright:
-	cme update dpkg-copyright -quiet
+	cme update dpkg-copyright
