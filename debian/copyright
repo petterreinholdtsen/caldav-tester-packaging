@@ -1,8 +1,8 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 
 Files: *
-Copyright: 2006-2015 Apple Inc.
-License: Apache-2.0 
+Copyright: 2006-2015, Apple Inc.
+License: Apache-2.0
 
 Files: debian/
 Copyright: 2014 Frank Piotrowski <f@pi0.de>
@@ -17,7 +17,7 @@ Copyright: 2014 Guido Günther <agx@sigxcpu.org>
 License: GPL-3+
 
 Files: src/unittest/test_jsonPointer.py
-Copyright: 2012 Cyrus Daboo <cdaboo@apple.com>
+Copyright: 2012, Cyrus Daboo <cdaboo@apple.com>.
 License: Apache-2.0
 
 License: Apache-2.0
