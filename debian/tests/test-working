@@ -10,7 +10,7 @@ error() { retval=1; echo "error:" "$@"; }
 
 ./testcaldav.py  --stop > "$ADTTMP/run.log" 2>&1 || true
 
-if grep -q scripts.tests.CalDAV "$ADTTMP/run.log"; then
+if grep -q scripts.tests "$ADTTMP/run.log"; then
     echo "success: running testcaldav seem to work"
 else
     error "output from testcaldav was not as expected"
