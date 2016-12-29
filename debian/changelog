@@ -1,3 +1,14 @@
+caldav-tester (7.0-3) unstable; urgency=low
+
+  * Document method in debian/rules for updating copyright file using cme.
+  * Minor updates for copyright file (add commas, move to https).
+  * Made autopkgtest script more robust.
+  * Changed Vcs links in d/control to https.
+  * Changed Standards-Version from 3.9.7 to 3.9.8.
+  * Updated watch file to work with new upstream pages.
+
+ -- Petter Reinholdtsen <pere@debian.org>  Thu, 29 Dec 2016 08:20:12 +0000
+
 caldav-tester (7.0-2) unstable; urgency=medium
 
   * Disabled 0003-older-pycalendar.patch as a new enough pycalendar is
